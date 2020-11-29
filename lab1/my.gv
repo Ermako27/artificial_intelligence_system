@@ -530,7 +530,7 @@ graph math_map {
     //шестой уровень, студийные мониторы  (модели Pioneer)
     "DM-40";
     "S-DJ80X";
-    "RM-07;"
+    "RM-07";
 
     //шестой уровень, студийные мониторы  (модели Yamaha)
     "HS5";
@@ -576,5 +576,385 @@ graph math_map {
     "Акустические системы" -- "Полочная акустика";
     "Акустические системы" -- "Дипольная акустика";
 
+    "Сабвуферы" -- "Активные";
+    "Сабвуферы" -- "Пассивные";
 
+    "Встраиваемая акустика" -- "Невидимая акустика";
+    "Встраиваемая акустика" -- "Трансформатная акустика";
+    "Встраиваемая акустика" -- "Влагостойкая акустика";
+
+    "Комплекты акустики" -- "Комплекты 5.1";
+    "Комплекты акустики" -- "Комплекты 7.1";
+    "Комплекты акустики" -- "Комплекты 3.1 Dolby Atmos";
+
+    "Саундбары" -- "Саундбары Dolby Atmos";
+    "Саундбары" -- "Беспроводные саундбары";
+    "Саундбары" -- "Саундбары со встроенным сабвуфером";
+
+    "Мониторы" -- "Сценические мониторы";
+    "Мониторы" -- "Студийные мониторы";
+
+    "Линейные массивы" -- "FBT";
+    "Линейные массивы" -- "K-ARRAY";
+    "Линейные массивы" -- "QSC";
+
+    "AV ресиверы" -- "Denon";
+    "AV ресиверы" -- "Onkyo";
+    "AV ресиверы" -- "Arcam";
+    "AV ресиверы" -- "Rotel";
+
+    "AV процессоры" -- "Emotiva";
+    "AV процессоры" -- "McIntosh";
+    "AV процессоры" -- "Integra";
+    "AV процессоры" -- "Anthem";
+
+    "CD ресиверы" -- "AVM";
+    "CD ресиверы" -- "Marantz";
+    "CD ресиверы" -- "T+A";
+
+    "Интегральные стереоусилители" -- "Rotel";
+    "Интегральные стереоусилители" -- "Marantz";
+    "Интегральные стереоусилители" -- "Cambridge";
+    "Интегральные стереоусилители" -- "Rega";
+
+    "Предусилители" -- "Cary Audio";
+    "Предусилители" -- "Bryston";
+    "Предусилители" -- "Naim";
+
+    "Усилители ламповые" -- "Dynavox";
+    "Усилители ламповые" -- "PrimaLuna";
+    "Усилители ламповые" -- "Luxman";
+
+    "Усилители для наушников" -- "Audio Valve";
+    "Усилители для наушников" -- "Stax";
+    "Усилители для наушников" -- "SPL";
+
+    "Напольная акустика" -- "Dali";
+    "Напольная акустика" -- "Klipsch";
+    "Напольная акустика" -- "Sonus Faber";
+
+    "Полочная акустика" -- "Monitor Audio";
+    "Полочная акустика" -- "B&W";
+    "Полочная акустика" -- "KEF";
+
+    "Дипольная акустика" -- "Wharfadale";
+    "Дипольная акустика" -- "Paradigm";
+
+    "Активные" -- "REL";
+    "Активные" -- "SVS";
+    "Активные" -- "Acoustic Energy";
+
+    "Пассивные" -- "PMC";
+    "Пассивные" -- "Martin Audio";
+    "Пассивные" -- "Graham Audio";
+
+    "Невидимая акустика" -- "Sonance";
+    "Невидимая акустика" -- "Amina";
+    "Невидимая акустика" -- "Monitor Audio";
+
+    "Трансформатная акустика" -- "JBL";
+    "Трансформатная акустика" -- "NORDFOLK";
+    "Трансформатная акустика" -- "MT-POWER";
+
+    "Влагостойкая акустика" -- "Martin Logan";
+    "Влагостойкая акустика" -- "Monitor Audio";
+
+    "Комплекты 5.1" -- "Heco";
+    "Комплекты 5.1" -- "Canton";
+    "Комплекты 5.1" -- "Davis Acoustics";
+
+    "Комплекты 7.1" -- "Dali";
+
+    "Комплекты 3.1 Dolby Atmos" -- "KEF";
+
+    "Саундбары Dolby Atmos" -- "Bang & Olufsen";
+    "Саундбары Dolby Atmos" -- "Samsung";
+    "Саундбары Dolby Atmos" -- "Sony";
+
+    "Беспроводные саундбары" -- "Sonos";
+    "Беспроводные саундбары" -- "Q-Acoustics";
+
+    "Саундбары со встроенным сабвуфером" -- "Audac";
+    "Саундбары со встроенным сабвуфером" -- "Canton";
+    "Саундбары со встроенным сабвуфером" -- "Denon";
+
+    "Сценические мониторы" -- "Behringer";
+    "Сценические мониторы" -- "FBT";
+    "Сценические мониторы" -- "ECO by VOLTA";
+
+    "Студийные мониторы" -- "Pioneer";
+    "Студийные мониторы" -- "Yamaha";
+    "Студийные мониторы" -- "Adam Audio";
+
+    "FBT" -- "MITUS 206LA";
+    "FBT" -- "MUSE 210LA";
+    "FBT" -- "MODUS 4820LA";
+    "FBT" -- "VHA 406A";
+    "FBT" -- "MODUS 4805LA";
+
+    "K-ARRAY" -- "KK102";
+    "K-ARRAY" -- "KK52";
+    "K-ARRAY" -- "KK50vb";
+    "K-ARRAY" -- "KZ10";
+    "K-ARRAY" -- "KZ10W";
+
+    "QSC" -- "WL3082";
+    "QSC" -- "KLA12";
+    "QSC" -- "KLA181";
+    "QSC" -- "GP218-sw";
+    "QSC" -- "WL118-sw";
+
+    "Denon" -- "AVR-X250BT";
+    "Denon" -- "AVR-X550BT";
+    "Denon" -- "AVR-S750H";
+    "Denon" -- "AVC-X4700H";
+    "Denon" -- "AVC-X8500H";
+
+    "Onkyo" -- "TX-NR696";
+    "Onkyo" -- "TX-SR393";
+    "Onkyo" -- "TX-RZ3100";
+    "Onkyo" -- "TX-RZ840";
+    "Onkyo" -- "TX-RZ3400";
+
+    "Arcam" -- "FMJ AVR390";
+    "Arcam" -- "AVR20";
+    "Arcam" -- "AVR30";
+
+    "Rotel" -- "RAP-1580";
+    "Rotel" -- "RSX-1058";
+    "Rotel" -- "RSX-1560";
+    "Rotel" -- "RSX-1562";
+
+    "Emotiva" -- "MC-700";
+    "Emotiva" -- "XMC-2";
+    "Emotiva" -- "RMC-1";
+    "Emotiva" -- "RMC-1L";
+
+    "McIntosh" -- "MX123";
+    "McIntosh" -- "MX170";
+
+    "Integra" -- "DRC-R1.1";
+
+    "Anthem" -- "AVM 60";
+    "Anthem" -- "AVM 70";
+    "Anthem" -- "AVM 90";
+
+    "AVM" -- "Evolution CS 5.2";
+    "AVM" -- "Audio CS 6.2";
+    "AVM" -- "Audio CS 8.2";
+
+    "Marantz" -- "M-CR612";
+    "Marantz" -- "M-CR412";
+
+    "T+A" -- "R1000 E";
+    "T+A" -- "PA 3100 HV";
+    "T+A" -- "MP 2500R";
+    "T+A" -- "Cala CDR";
+
+    "Rotel" -- "A14";
+    "Rotel" -- "A11";
+    "Rotel" -- "RA-1592";
+    "Rotel" -- "RA-1572";
+
+    "Marantz" -- "PM5005";
+    "Marantz" -- "PM8006";
+    "Marantz" -- "PM-KI";
+
+    "Cambridge" -- "AXA35";
+    "Cambridge" -- "CXA81";
+    "Cambridge" -- "Azur 851A";
+    "Cambridge" -- "Edge A";
+
+    "Rega" -- "io Amplifier";
+    "Rega" -- "Elex-R";
+    "Rega" -- "Aethos";
+    "Rega" -- "Osiris";
+
+    "Cary Audio" -- "SL100";
+    "Cary Audio" -- "SLP 98P";
+    "Cary Audio" -- "SLP 05";
+
+    "Bryston" -- "BP-16";
+    "Bryston" -- "BP-17";
+    "Bryston" -- "BP-26 17";
+    "Bryston" -- "BP-17-3";
+
+    "Naim" -- "NAC 202";
+    "Naim" -- "NAC 282";
+    "Naim" -- "NAC 272";
+    "Naim" -- "NAC 252";
+
+    "Dynavox" -- "VR-20";
+    "Dynavox" -- "VR-307BT";
+    "Dynavox" -- "VR-70";
+
+    "PrimaLuna" -- "Evolution 100";
+    "PrimaLuna" -- "Evolution 200";
+    "PrimaLuna" -- "Evolution 300";
+    "PrimaLuna" -- "Evolution 400";
+
+    "Luxman" -- "SQ-N150";
+    "Luxman" -- "MQ-88uC";
+    "Luxman" -- "LX-380";
+    "Luxman" -- "MQ-300";
+
+    "Audio Valve" -- "Impedancer RKV";
+    "Audio Valve" -- "luminare";
+    "Audio Valve" -- "Verto";
+
+    "Stax" -- "SRM-D10";
+    "Stax" -- "SRM 007t II";
+    "Stax" -- "SRM-700S";
+
+    "SPL" -- "2Control 2861";
+    "SPL" -- "Phonitor E+DAC768xs";
+    "SPL" -- "Phonitor e + DAC192";
+    "SPL" -- "Phonitor XE+DAC768xs";
+
+    "Dali" -- "Oberon 5";
+    "Dali" -- "Oberon 6";
+    "Dali" -- "Oberon 6";
+    "Dali" -- "Oberon 6";
+    "Dali" -- "Oberon 6";
+
+    "Klipsch" -- "Reference R-820F";
+    "Klipsch" -- "RP-6000F";
+    "Klipsch" -- "RP-280FA";
+    "Klipsch" -- "RF-7 III";
+
+    "Sonus Faber" -- "Sonetto";
+    "Sonus Faber" -- "Olympica Nova";
+    "Sonus Faber" -- "Serafino Tradition";
+    "Sonus Faber" -- "Cremonese Wenge";
+    "Sonus Faber" -- "Aida II";
+
+    "Monitor Audio" -- "Bronze 50";
+    "Monitor Audio" -- "Silver 50";
+    "Monitor Audio" -- "Gold 50";
+    "Monitor Audio" -- "Platinum PL100 II";
+
+    "B&W" -- "606";
+    "B&W" -- "607";
+    "B&W" -- "705";
+    "B&W" -- "706";
+    "B&W" -- "707";
+    "B&W" -- "805";
+
+    "KEF" -- "Q150";
+    "KEF" -- "Q350";
+    "KEF" -- "R3";
+    "KEF" -- "LS50";
+
+    "Wharfadale" -- "DFS";
+    "Wharfadale" -- "EVO 4.S";
+
+    "Paradigm" -- "Surround 1";
+    "Paradigm" -- "Millenia ADP";
+    "Paradigm" -- "Studio ADP-590";
+    "Paradigm" -- "Signature ADP3 v.3";
+
+    "REL" -- "T Zero MKIII";
+    "REL" -- "T9i";
+    "REL" -- "S510";
+
+    "SVS" -- "SB-1000";
+    "SVS" -- "PB-3000";
+    "SVS" -- "PB16-Ultra";
+
+    "Acoustic Energy" -- "AE108";
+    "Acoustic Energy" -- "Aelit";
+    "Acoustic Energy" -- "AE308";
+
+    "PMC" -- "XB2-P";
+    "PMC" -- "XB3-P";
+
+    "Martin Audio" - "SX112B";
+    "Martin Audio" - "SVC118";
+
+    "Graham Audio" -- "Chartwell SUB3";
+
+    "Sonance" -- "ISW";
+    "Sonance" -- "IS4SST";
+
+    "Amina" -- "Mobius 7";
+
+    "Monitor Audio" -- "IV140";
+
+    "JBL" -- "CONTROL 12C/T";
+    "JBL" -- "CONTROL 14C/T";
+
+    "NORDFOLK" -- "NSC106";
+    "NORDFOLK" -- "NSC128";
+
+    "MT-POWER" -- "MD-55RT v2";
+    "MT-POWER" -- "MD-85RT v2";
+
+    "Martin Logan" -- "IC3-AW";
+    "Martin Logan" -- "IC8-AW";
+
+    "Monitor Audio" -- "AWC265";
+    "Monitor Audio" -- "AWC285";
+
+    "Heco" -- "Ambient";
+    "Heco" -- "Victa Prime 702";
+    "Heco" -- "Aurora 700";
+
+    "Canton" -- "Movie 75";
+    "Canton" -- "Movie 165";
+    "Canton" -- "Movie 365";
+
+    "Davis Acoustics" -- "Discovery Set";
+    "Davis Acoustics" -- "Balthus Set";
+
+    "Dali" -- "Opticon 5";
+
+    "KEF" -- "N4";
+
+    "Bang & Olufsen" -- "Beosound Stage Anthracite";
+    "Bang & Olufsen" -- "Beosound Stage Oak";
+
+    "Samsung" -- "HW-Q60T/RU";
+    "Samsung" -- "HW-Q70R";
+    "Samsung" -- "HW-Q950T";
+
+    "Sony" -- "HT-ZF9";
+
+    "Sonos" -- "BEAM";
+    "Sonos" -- "Playbase";
+    "Sonos" -- "Arc";
+
+    "Q-Acoustics" -- "M3";
+    "Q-Acoustics" -- "M4";
+
+    "Audac" -- "IMEO1";
+
+    "Canton" -- "DM 60";
+    "Canton" -- "DM 101";
+
+    "Denon" -- "DHT-S216";
+    "Denon" -- "HEOS BAR";
+
+    "Behringer" -- "VS1220F";
+    "Behringer" -- "F1220D";
+    "Behringer" -- "DR115DSP";
+
+    "FBT" -- "VENTIS 115";
+    "FBT" -- "StageMaxX 12MA";
+    "FBT" -- "MITUS 210MA";
+
+    "ECO by VOLTA" -- "TANGO-10A";
+    "ECO by VOLTA" -- "TANGO-12A";
+    "ECO by VOLTA" -- "TANGO-15A";
+
+    "Pioneer" -- "DM-40";
+    "Pioneer" -- "S-DJ80X";
+    "Pioneer" -- "RM-07";
+
+    "Yamaha" -- "HS5";
+    "Yamaha" -- "HS7";
+    "Yamaha" -- "HS8";
+
+    "Adam Audio" -- "T5V";
+    "Adam Audio" -- "A3X";
+    "Adam Audio" -- "A7X";
 }
