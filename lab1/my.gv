@@ -1,9 +1,9 @@
-graph math_map {
+graph audio_technica_map {
     //node [shape=circle]";
-    //-1 уровень
-    audio_technica [label="Аудиотехника"];
+    //audio_technica [label="Аудиотехника"];
 
-    //нулевой уровень
+    // --------------------- 000 -------------------------
+
     "Аудиотехника";
 
     // --------------------- 111 -------------------------
@@ -82,7 +82,6 @@ graph math_map {
     "QSC";
 
     //четвертый уровень, AV ресиверы (бренды)
-    "Denon";
     "Onkyo";
     "Arcam";
     "Rotel";
@@ -99,8 +98,7 @@ graph math_map {
     "T+A";
 
     //четвертый уровень, интегральные усилители (бренды)
-    "Rotel";
-    "Marantz";
+    "Electrocompaniet";
     "Cambridge";
     "Rega";
 
@@ -122,14 +120,14 @@ graph math_map {
     // --------------------- 555 -------------------------
 
     //пятый уровень, напольная акустика (бренды)
-    "Dali";
+    "Focal";
     "Klipsch";
     "Sonus Faber";
 
     //пятый уровень, полочная акустика (бренды)
-    "Monitor Audio";
+    "Polk Audio";
     "B&W";
-    "KEF";
+    "Fyne Audio";
 
     //пятый уровень, дипольная акустика (бренды)
     "Wharfadale";
@@ -148,7 +146,7 @@ graph math_map {
     //пятый уровень, невидимая акустика (бренды)
     "Sonance";
     "Amina";
-    "Monitor Audio";
+    "Revox";
 
     //пятый уровень, трансформатная акустика (бренды)
     "JBL";
@@ -181,12 +179,12 @@ graph math_map {
 
     //пятый уровень, саундбары со встроеным сабвуфером (бренды)
     "Audac";
-    "Canton";
+    "Sennheiser";
     "Denon";
 
     //пятый уровень, сценические мониторы (бренды)
     "Behringer";
-    "FBT";
+    "Invotone";
     "ECO by VOLTA";
 
     //пятый уровень, студийные мониторы (бренды)
@@ -214,13 +212,6 @@ graph math_map {
     "KLA181";
     "GP218-sw";
     "WL118-sw";
-
-    //пятый уровень, AV ресиверы (модели Denon)
-    "AVR-X250BT";
-    "AVR-X550BT";
-    "AVR-S750H";
-    "AVC-X4700H";
-    "AVC-X8500H";
 
     //пятый уровень, AV ресиверы (модели Onkyo)
     "TX-NR696";
@@ -274,15 +265,15 @@ graph math_map {
     "Cala CDR";
 
     //пятый уровень, интегральные усилители (модели Rotel)
-    "A14";
-    "A11";
-    "RA-1592";
-    "RA-1572";
+    //"A14";
+    //"A11";
+    //"RA-1592";
+    //"RA-1572";
 
-    //пятый уровень, интегральные усилители (модели Marantz)
-    "PM5005";
-    "PM8006";
-    "PM-KI";
+    //пятый уровень, интегральные усилители (модели Electrocompaniet)
+    "ECI 80D";
+    "ECI 6 MKII";
+    "ECI 6 DX MKII";
 
     //пятый уровень, интегральные усилители (модели Cambridge)
     "AXA35";
@@ -349,12 +340,12 @@ graph math_map {
 
     // --------------------- 6 -------------------------
 
-    //шестой уровень, напольная акустика (модели Dali)
-    "Oberon 5";
-    "Spektor 6";
-    "Opticon 6";
-    "Rubicon 6";
-    "Epicon 6";
+    //шестой уровень, напольная акустика (модели Focal)
+    "Chora 816";
+    "Chora 826-D";
+    "Aria 926";
+    "Aria 936";
+    "Spectral 40th";
 
     //шестой уровень, напольная акустика (модели Klipsch)
     "Reference R-820F";
@@ -369,11 +360,10 @@ graph math_map {
     "Cremonese Wenge";
     "Aida II";
 
-    //шестой уровень, полочная акустика (модели Monitor Audio)
-    "Bronze 50";
-    "Silver 50";
-    "Gold 50";
-    "Platinum PL100 II";
+    //шестой уровень, полочная акустика (модели Polk Audio)
+    "RTi A3";
+    "L100";
+    "L200";
 
     //шестой уровень, полочная акустика (модели B&W)
     "606";
@@ -383,11 +373,11 @@ graph math_map {
     "707";
     "805";
 
-    //шестой уровень, полочная акустика (модели KEF)
-    "Q150";
-    "Q350";
-    "R3";
-    "LS50";
+    //шестой уровень, полочная акустика (модели Fyne Audio)
+    "F301";
+    "F500";
+    "RF700";
+    "F701";
 
     //шестой уровень, дипльная акустика (модели Wharfadale)
     "DFS";
@@ -432,8 +422,11 @@ graph math_map {
     //шестой уровень, невидимая акустика (модели Amina);
     "Mobius 7";
 
-    //шестой уровень, невидимая акустика (модели Monitor Audio);
-    "IV140";
+    //шестой уровень, невидимая акустика (модели Revox);
+    "Re:sound I invisible 20 U mini";
+    "Re:sound I invisible 40 C";
+    "Re:sound I invisible 80 W";
+    "Re:sound I invisible 80 U";
 
     //шестой уровень, трансформатная акустика (модели JBL);
     "CONTROL 12C/T";
@@ -504,9 +497,8 @@ graph math_map {
     //шестой уровень, саундбары со встроеным сабвуфером  (модели Audac)
     "IMEO1";
 
-    //шестой уровень, саундбары со встроеным сабвуфером  (модели Canton)
-    "DM 60";
-    "DM 101";
+    //шестой уровень, саундбары со встроеным сабвуфером  (модели Sennheiser)
+    "AMBEO";
 
     //шестой уровень, саундбары со встроеным сабвуфером  (модели Denon)
     "DHT-S216";
@@ -517,10 +509,10 @@ graph math_map {
     "F1220D";
     "DR115DSP";
 
-    //шестой уровень, сценические мониторы  (модели FBT)
-    "VENTIS 115";
-    "StageMaxX 12MA";
-    "MITUS 210MA";
+    //шестой уровень, сценические мониторы  (модели Invotone)
+    "AS12MA";
+    "DSX15A";
+    "DSX15CMA";
 
     //шестой уровень, сценические мониторы  (модели ECO by VOLTA)
     "TANGO-10A";
@@ -598,7 +590,6 @@ graph math_map {
     "Линейные массивы" -- "K-ARRAY";
     "Линейные массивы" -- "QSC";
 
-    "AV ресиверы" -- "Denon";
     "AV ресиверы" -- "Onkyo";
     "AV ресиверы" -- "Arcam";
     "AV ресиверы" -- "Rotel";
@@ -612,8 +603,7 @@ graph math_map {
     "CD ресиверы" -- "Marantz";
     "CD ресиверы" -- "T+A";
 
-    "Интегральные стереоусилители" -- "Rotel";
-    "Интегральные стереоусилители" -- "Marantz";
+    "Интегральные стереоусилители" -- "Electrocompaniet";
     "Интегральные стереоусилители" -- "Cambridge";
     "Интегральные стереоусилители" -- "Rega";
 
@@ -629,13 +619,13 @@ graph math_map {
     "Усилители для наушников" -- "Stax";
     "Усилители для наушников" -- "SPL";
 
-    "Напольная акустика" -- "Dali";
+    "Напольная акустика" -- "Focal";
     "Напольная акустика" -- "Klipsch";
     "Напольная акустика" -- "Sonus Faber";
 
-    "Полочная акустика" -- "Monitor Audio";
+    "Полочная акустика" -- "Polk Audio";
     "Полочная акустика" -- "B&W";
-    "Полочная акустика" -- "KEF";
+    "Полочная акустика" -- "Fyne Audio";
 
     "Дипольная акустика" -- "Wharfadale";
     "Дипольная акустика" -- "Paradigm";
@@ -650,7 +640,7 @@ graph math_map {
 
     "Невидимая акустика" -- "Sonance";
     "Невидимая акустика" -- "Amina";
-    "Невидимая акустика" -- "Monitor Audio";
+    "Невидимая акустика" -- "Revox";
 
     "Трансформатная акустика" -- "JBL";
     "Трансформатная акустика" -- "NORDFOLK";
@@ -658,6 +648,7 @@ graph math_map {
 
     "Влагостойкая акустика" -- "Martin Logan";
     "Влагостойкая акустика" -- "Monitor Audio";
+    "Влагостойкая акустика" -- "Artsound";
 
     "Комплекты 5.1" -- "Heco";
     "Комплекты 5.1" -- "Canton";
@@ -675,11 +666,11 @@ graph math_map {
     "Беспроводные саундбары" -- "Q-Acoustics";
 
     "Саундбары со встроенным сабвуфером" -- "Audac";
-    "Саундбары со встроенным сабвуфером" -- "Canton";
+    "Саундбары со встроенным сабвуфером" -- "Sennheiser";
     "Саундбары со встроенным сабвуфером" -- "Denon";
 
     "Сценические мониторы" -- "Behringer";
-    "Сценические мониторы" -- "FBT";
+    "Сценические мониторы" -- "Invotone";
     "Сценические мониторы" -- "ECO by VOLTA";
 
     "Студийные мониторы" -- "Pioneer";
@@ -703,12 +694,6 @@ graph math_map {
     "QSC" -- "KLA181";
     "QSC" -- "GP218-sw";
     "QSC" -- "WL118-sw";
-
-    "Denon" -- "AVR-X250BT";
-    "Denon" -- "AVR-X550BT";
-    "Denon" -- "AVR-S750H";
-    "Denon" -- "AVC-X4700H";
-    "Denon" -- "AVC-X8500H";
 
     "Onkyo" -- "TX-NR696";
     "Onkyo" -- "TX-SR393";
@@ -751,14 +736,9 @@ graph math_map {
     "T+A" -- "MP 2500R";
     "T+A" -- "Cala CDR";
 
-    "Rotel" -- "A14";
-    "Rotel" -- "A11";
-    "Rotel" -- "RA-1592";
-    "Rotel" -- "RA-1572";
-
-    "Marantz" -- "PM5005";
-    "Marantz" -- "PM8006";
-    "Marantz" -- "PM-KI";
+    "Electrocompaniet" -- "ECI 80D";
+    "Electrocompaniet" -- "ECI 6 MKII";
+    "Electrocompaniet" -- "ECI 6 DX MKII";
 
     "Cambridge" -- "AXA35";
     "Cambridge" -- "CXA81";
@@ -811,11 +791,11 @@ graph math_map {
     "SPL" -- "Phonitor e + DAC192";
     "SPL" -- "Phonitor XE+DAC768xs";
 
-    "Dali" -- "Oberon 5";
-    "Dali" -- "Oberon 6";
-    "Dali" -- "Oberon 6";
-    "Dali" -- "Oberon 6";
-    "Dali" -- "Oberon 6";
+    "Focal" -- "Chora 816";
+    "Focal" -- "Chora 826-D";
+    "Focal" -- "Aria 926";
+    "Focal" -- "Aria 936";
+    "Focal" -- "Spectral 40th";
 
     "Klipsch" -- "Reference R-820F";
     "Klipsch" -- "RP-6000F";
@@ -828,10 +808,9 @@ graph math_map {
     "Sonus Faber" -- "Cremonese Wenge";
     "Sonus Faber" -- "Aida II";
 
-    "Monitor Audio" -- "Bronze 50";
-    "Monitor Audio" -- "Silver 50";
-    "Monitor Audio" -- "Gold 50";
-    "Monitor Audio" -- "Platinum PL100 II";
+    "Polk Audio" -- "RTi A3";
+    "Polk Audio" -- "L100";
+    "Polk Audio" -- "L200";
 
     "B&W" -- "606";
     "B&W" -- "607";
@@ -840,10 +819,10 @@ graph math_map {
     "B&W" -- "707";
     "B&W" -- "805";
 
-    "KEF" -- "Q150";
-    "KEF" -- "Q350";
-    "KEF" -- "R3";
-    "KEF" -- "LS50";
+    "Fyne Audio" -- "F301";
+    "Fyne Audio" -- "F500";
+    "Fyne Audio" -- "RF700";
+    "Fyne Audio" -- "F701";
 
     "Wharfadale" -- "DFS";
     "Wharfadale" -- "EVO 4.S";
@@ -868,8 +847,8 @@ graph math_map {
     "PMC" -- "XB2-P";
     "PMC" -- "XB3-P";
 
-    "Martin Audio" - "SX112B";
-    "Martin Audio" - "SVC118";
+    "Martin Audio" -- "SX112B";
+    "Martin Audio" -- "SVC118";
 
     "Graham Audio" -- "Chartwell SUB3";
 
@@ -878,7 +857,10 @@ graph math_map {
 
     "Amina" -- "Mobius 7";
 
-    "Monitor Audio" -- "IV140";
+    "Revox" -- "Re:sound I invisible 20 U mini";
+    "Revox" -- "Re:sound I invisible 40 C";
+    "Revox" -- "Re:sound I invisible 80 W";
+    "Revox" -- "Re:sound I invisible 80 U";
 
     "JBL" -- "CONTROL 12C/T";
     "JBL" -- "CONTROL 14C/T";
@@ -888,6 +870,10 @@ graph math_map {
 
     "MT-POWER" -- "MD-55RT v2";
     "MT-POWER" -- "MD-85RT v2";
+
+    "Artsound" -- "MDC6";
+    "Artsound" -- "DC84";
+    "Artsound" -- "HPSQ525";
 
     "Martin Logan" -- "IC3-AW";
     "Martin Logan" -- "IC8-AW";
@@ -928,8 +914,7 @@ graph math_map {
 
     "Audac" -- "IMEO1";
 
-    "Canton" -- "DM 60";
-    "Canton" -- "DM 101";
+    "Sennheiser" -- "AMBEO";
 
     "Denon" -- "DHT-S216";
     "Denon" -- "HEOS BAR";
@@ -938,9 +923,9 @@ graph math_map {
     "Behringer" -- "F1220D";
     "Behringer" -- "DR115DSP";
 
-    "FBT" -- "VENTIS 115";
-    "FBT" -- "StageMaxX 12MA";
-    "FBT" -- "MITUS 210MA";
+    "Invotone" -- "AS12MA";
+    "Invotone" -- "DSX15A";
+    "Invotone" -- "DSX15CMA";
 
     "ECO by VOLTA" -- "TANGO-10A";
     "ECO by VOLTA" -- "TANGO-12A";
