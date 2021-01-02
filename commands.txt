@@ -1,0 +1,2 @@
+dot -Tpng -O my.gv // сгенерить png из описанного графа
+https://graphviz.org/doc/info/output.html - как сконвертить json
