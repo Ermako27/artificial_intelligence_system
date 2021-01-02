@@ -1,93 +1,64 @@
 const fs = require('fs');
+const audioData = require('./audio.json');
 
-const fileName = 'data.txt';
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
 
-const splittedData = fs.readFileSync(fileName, "utf8").split('\n').slice(1,-1);
-
-function Node(name, parent = null) {
+function Node({name, params = null, randomIntervals = null}) {
     this.name = name;
     this.children = [];
-    this.parent = parent;
+    this.params = params;
+    this.randomIntervals = randomIntervals;
 }
 
-/**
- * 
- * @param {Array} data - массив строк из файла data.txt без первой и последней строки
- */
-function createTree(data) {
-    const nodes = {}
-    let rootNodeName = null;
-    let caseName;
+function createNodes(objects) {
+    const nodes = []
 
-    for (el of data) {
-
-        if (el.includes('"')) {
-            const splittedEl = el.split('"').slice(0,4);
-            caseName = splittedEl[0].trim(); // удаляем пробел
-        }
-
-        if (rootNodeName === null) {
-            rootNodeName = splittedEl[1]
-        }
-
-        switch (splittedEl[0]) {
-            case 'node':
-                const nodeName = splittedEl[1];
-                nodes[nodeName] = new Node(nodeName);
-                break
-            case 'edge':
-                const parentNodeName = splittedEl[1];
-
-                
-                const childNodeName = splittedEl[2] === ' ' ? splittedEl[3] : splittedEl[2];
-
-                console.log(splittedEl)
-
-                const parentNode = nodes[parentNodeName];
-                const childNode = nodes[childNodeName];
-
-                parentNode.children.push(childNode);
-                childNode.parent = parentNode;
-        }
+    for (let elem of objects) {
+        const {name, params = null, randomIntervals = null} = elem;
+        const node = new Node({name, params, randomIntervals});
+        nodes.push(node)
     }
 
-    return nodes[rootNodeName];
+    return nodes;
 }
 
-console.log(createTree(splittedData));
+function createParams(randomIntervals) {
+    return {
+        "max_power": getRandomInt(randomIntervals.max_power[0], randomIntervals.max_power[1]),
+        "max_frequency": getRandomInt(randomIntervals.max_frequency[0], randomIntervals.max_frequency[1]),
+        "min_frequency": getRandomInt(randomIntervals.min_frequency[0], randomIntervals.min_frequency[1]),
+        "body_height": getRandomInt(randomIntervals.body_height[0], randomIntervals.body_height[1]),
+        "wireless": getRandomInt(0, 1),
+        "acoustic_design": randomIntervals.acoustic_design[getRandomInt(0, randomIntervals.acoustic_design.length - 1)]
+    }
+}
 
-// function Tree() {
-//     this.nodeMap = {};
-//     this.root = null;
-// }
+function createTree(data, withParams = false) {
+    const {objects, edges} = data;
 
-// Tree.prototype.addNode = function addNode(node, parent) {
+    const nodes = createNodes(objects);
 
-//     if (this.root === null) {
-//         this.root = node;
-//     } else {
-//         parent.children.push(node)
-//     }
-// }
+    for (let edge of edges) {
+        const {tail, head} = edge;
+        const parentNode = nodes[tail];
+        const childNode = nodes[head];
 
-// /**
-//  * получение ноды обходом в глубину
-//  * @param {*} nodeName  имя искомой ноды
-//  * @param {*} node корень поддерева
-//  */
-// Tree.prototype.getNode = function getNode(nodeName, node) {
-//     if (node.children.length === 0) {
-//         return null;
-//     } else if (node.name === nodeName) {
-//         return node
-//     }
+        if (withParams && parentNode.randomIntervals) {
+            const {randomIntervals} = parentNode;
+            const params = createParams(randomIntervals);
+            childNode.params = params;
+            parentNode.params = null;
+            childNode.randomIntervals = randomIntervals
+        }
 
-//     let resultNode;
-//     for (childNode of node.children) {
-//         resultNode = getNode(nodeName, childNode);
+        parentNode.children.push(childNode);
+    }
 
-//         if (resultNode !== null) {
-//             return resultNode;
-//         }
-//     }
-// }
+    return nodes[0];
+}
+
+const tree = createTree(audioData, true);
+
+fs.writeFileSync('./audioTree.json', JSON.stringify(tree));
