@@ -1,9 +1,6 @@
 const fs = require('fs');
-const audioData = require('./audio.json');
-
-function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min + 1) ) + min;
-}
+const audioData = require('./audio.json'); // файл сгенеренный командой из https://graphviz.org/doc/info/output.html, в которой ручками были добавлены randomIntervals на узлы 3 уровня, чтобы сгенерировать данные на все листья
+const { getRandomInt } = require('../utils/randomInt');
 
 function Node({name, params = null, randomIntervals = null, id}) {
     this.id = id;
@@ -25,6 +22,7 @@ function createNodes(objects) {
     return nodes;
 }
 
+// рандомим параметры
 function createParams(randomIntervals) {
     return {
         "max_power": getRandomInt(randomIntervals.max_power[0], randomIntervals.max_power[1]),
@@ -59,7 +57,9 @@ function createJsonTree(data) {
         childNode.parent = parentNode.id;
     }
 
-    return {nodes};
+    const leaves = nodes.filter((node) => node.children.length === 0);
+
+    return {nodes, leaves};
 }
 
 const tree = createJsonTree(audioData);
