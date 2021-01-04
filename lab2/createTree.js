@@ -5,8 +5,10 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
 
-function Node({name, params = null, randomIntervals = null}) {
+function Node({name, params = null, randomIntervals = null, id}) {
+    this.id = id;
     this.name = name;
+    this.parent = null;
     this.children = [];
     this.params = params;
     this.randomIntervals = randomIntervals;
@@ -14,10 +16,9 @@ function Node({name, params = null, randomIntervals = null}) {
 
 function createNodes(objects) {
     const nodes = []
-
     for (let elem of objects) {
-        const {name, params = null, randomIntervals = null} = elem;
-        const node = new Node({name, params, randomIntervals});
+        const {name, params = null, randomIntervals = null, _gvid} = elem;
+        const node = new Node({name, params, randomIntervals, id: _gvid});
         nodes.push(node)
     }
 
@@ -35,17 +36,18 @@ function createParams(randomIntervals) {
     }
 }
 
-function createTree(data, withParams = false) {
+function createJsonTree(data) {
     const {objects, edges} = data;
 
     const nodes = createNodes(objects);
 
     for (let edge of edges) {
+
         const {tail, head} = edge;
         const parentNode = nodes[tail];
         const childNode = nodes[head];
 
-        if (withParams && parentNode.randomIntervals) {
+        if (parentNode.randomIntervals) {
             const {randomIntervals} = parentNode;
             const params = createParams(randomIntervals);
             childNode.params = params;
@@ -53,12 +55,13 @@ function createTree(data, withParams = false) {
             childNode.randomIntervals = randomIntervals
         }
 
-        parentNode.children.push(childNode);
+        parentNode.children.push(childNode.id);
+        childNode.parent = parentNode.id;
     }
 
-    return nodes[0];
+    return {nodes};
 }
 
-const tree = createTree(audioData, true);
+const tree = createJsonTree(audioData);
 
 fs.writeFileSync('./audioTree.json', JSON.stringify(tree));
