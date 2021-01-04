@@ -1,3 +1,19 @@
+const tree = require('../lab1/audioTree.json')
+/**
+ *       "_gvid": 70,
+      "name": "Chora 816",
+
+            "_gvid": 92,
+      "name": "805",
+ */
+
+const {nodes} = tree;
+
+const node1 = nodes[70];
+const node2 = nodes[92];
+
+// console.log(node1, node2);
+
 const audioDesignMap = {
     "боковой басовый динамик": 1,
     "закрытый корпус": 2,
@@ -37,8 +53,8 @@ function manhattanDistance(node1, node2) {
 }
 
 function treeDistance(tree, node1, node2) {
-    let currentNode1 = node1
-    let currentNode2 = node2
+    let currentNode1 = node1;
+    let currentNode2 = node2;
 
     let path1Len = 0;
     let path2Len = 0;
@@ -73,7 +89,7 @@ function correlation(node1, node2) {
         node1.params['body_height'] +
         node1.params['wireless'] +
         audioDesignMap[node1.params['acoustic_design']]
-    ) / 6
+    ) / 6;
 
     const avg2 = (
         node2.params['max_power'] +
@@ -82,16 +98,34 @@ function correlation(node1, node2) {
         node2.params['body_height'] +
         node2.params['wireless'] +
         audioDesignMap[node2.params['acoustic_design']]
-    ) / 6
+    ) / 6;
 
     const params = Object.keys(node1.params);
+
     for (let param of params) {
-        numerator += (node1.params[param] - avg1) * (node2.params[param] - avg2);
-        denomPart1 += Math.pow(node1.params[param] - avg1, 2)
-        denomPart2 += Math.pow(node2.params[param] - avg2, 2)
+        if (param === 'acoustic_design') {
+            numerator += (audioDesignMap[node1.params[param]] - avg1) * (audioDesignMap[node2.params[param]] - avg2);
+            denomPart1 += Math.pow(audioDesignMap[node1.params[param]] - avg1, 2);
+            denomPart2 += Math.pow(audioDesignMap[node2.params[param]] - avg2, 2);
+    
+        } else {
+            numerator += (node1.params[param] - avg1) * (node2.params[param] - avg2);
+            denomPart1 += Math.pow(node1.params[param] - avg1, 2);
+            denomPart2 += Math.pow(node2.params[param] - avg2, 2);
+        }        
     }
 
     const denominator = Math.sqrt(denomPart1 * denomPart2);
 
     return numerator / denominator;
 }
+
+console.log('Лист дерева 1:', node1, '\n');
+console.log('Лист дерева 2:', node2,)
+console.log('-----------------------------------')
+
+
+console.log('Евклидово растояние: ',euclideanDistance(node1, node2));
+console.log('Манхетанское растояние: ',manhattanDistance(node1, node2));
+console.log('Расстояние по дереву: ',treeDistance(nodes, node1, node2));
+console.log('Корреляция: ',correlation(node1, node2));
