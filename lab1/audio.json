@@ -1,0 +1,2884 @@
+{
+  "name": "audio_technica_map",
+  "directed": false,
+  "strict": false,
+  "bb": "0,0,15693,396",
+  "_subgraph_cnt": 0,
+  "objects": [
+    {
+      "_gvid": 0,
+      "name": "Акустика",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "9733.1,378",
+      "width": "1.5526"
+    },
+    {
+      "_gvid": 1,
+      "name": "Непрофессиональная акустика",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "8316.1,306",
+      "width": "4.4413"
+    },
+    {
+      "_gvid": 2,
+      "name": "Профессиональная акустика",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "11905,306",
+      "width": "4.1344"
+    },
+    {
+      "_gvid": 3,
+      "name": "Акустические системы",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "3065.1,234",
+      "width": "3.358"
+    },
+    {
+      "_gvid": 4,
+      "name": "Встраиваемая акустика",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "6480.1,234",
+      "width": "3.4844"
+    },
+    {
+      "_gvid": 5,
+      "name": "Комплекты акустики",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "8316.1,234",
+      "width": "3.1233"
+    },
+    {
+      "_gvid": 6,
+      "name": "Саундбары",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "9716.1,234",
+      "width": "1.7693"
+    },
+    {
+      "_gvid": 7,
+      "name": "Мониторы",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "11905,234",
+      "width": "1.679"
+    },
+    {
+      "_gvid": 8,
+      "name": "Сабвуферы",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "13878,234",
+      "width": "1.8054"
+    },
+    {
+      "_gvid": 9,
+      "name": "Напольная акустика",
+      "randomIntervals": {
+        "max_power": [30, 2750],
+        "max_frequency": [1000, 250000],
+        "min_frequency": [1000, 50000],
+        "body_height": [63, 2491],
+        "wireless": [0, 1],
+        "acoustic_design": [
+          "боковой басовый динамик",
+          "закрытый корпус",
+          "с фазинвентором",
+          "электростатические",
+          "с динамиком рупорного типа"
+        ]
+      },
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "1372.1,162",
+      "width": "3.0331"
+    },
+    {
+      "_gvid": 10,
+      "name": "Полочная акустика",
+      "randomIntervals": {
+        "max_power": [7, 25000],
+        "max_frequency": [1000, 100000],
+        "min_frequency": [1000, 45000],
+        "body_height": [29, 3040],
+        "wireless": [0, 1],
+        "acoustic_design": [
+          "боковой басовый динамик",
+          "закрытый корпус",
+          "с фазинвентором",
+          "электростатические",
+          "с динамиком рупорного типа"
+        ]
+      },
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "2770.1,162",
+      "width": "2.9067"
+    },
+    {
+      "_gvid": 11,
+      "name": "Дипольная акустика",
+      "randomIntervals": {
+        "max_power": [70, 400],
+        "max_frequency": [20000, 50000],
+        "min_frequency": [40, 125],
+        "body_height": [149,413],
+        "wireless": [0, 1],
+        "acoustic_design": [
+          "с фазинвентором",
+          "закрытый корпус"
+        ]
+      },
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "3249.1,162",
+      "width": "3.0331"
+    },
+    {
+      "_gvid": 12,
+      "name": "Невидимая акустика",
+      "randomIntervals": {
+        "max_power": [20, 500],
+        "max_frequency": [150, 30000],
+        "min_frequency": [25, 100],
+        "body_height": [225, 1331],
+        "wireless": [0, 1],
+        "acoustic_design": [
+          "с фазинвентором",
+          "закрытый корпус"
+        ]
+      },
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "4679.1,162",
+      "width": "3.0872"
+    },
+    {
+      "_gvid": 13,
+      "name": "Трансформатная акустика",
+      "randomIntervals": {
+        "max_power": [5, 120],
+        "max_frequency": [200, 20000],
+        "min_frequency": [40, 200],
+        "body_height": [60, 258],
+        "wireless": [0, 1],
+        "acoustic_design": [
+          "с фазинвентором",
+          "закрытый корпус"
+        ]
+      },
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "6150.1,162",
+      "width": "3.8274"
+    },
+    {
+      "_gvid": 14,
+      "name": "Влагостойкая акустика",
+      "randomIntervals": {
+        "max_power": [20, 130],
+        "max_frequency": [26, 30000],
+        "min_frequency": [36, 102],
+        "body_height": [150, 311],
+        "wireless": [0, 1],
+        "acoustic_design": [
+          "с фазинвентором",
+          "закрытый корпус"
+        ]
+      },
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "6673.1,162",
+      "width": "3.4303"
+    },
+    {
+      "_gvid": 15,
+      "name": "Комплекты 5.1",
+      "randomIntervals": {
+        "max_power": [50, 1750],
+        "max_frequency": [150, 55000],
+        "min_frequency": [18, 160],
+        "body_height": [83, 1225],
+        "wireless": [0, 1],
+        "acoustic_design": [
+          "боковой басовый динамик",
+          "закрытый корпус",
+          "с фазинвентором",
+          "с активным басом",
+          "с динамиком рупорного типа"
+        ]
+      },
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "8067.1,162",
+      "width": "2.3109"
+    },
+    {
+      "_gvid": 16,
+      "name": "Комплекты 7.1",
+      "randomIntervals": {
+        "max_power": [100, 150],
+        "max_frequency": [17000, 35000],
+        "min_frequency": [28, 38],
+        "body_height": [83, 891],
+        "wireless": [0, 1],
+        "acoustic_design": [
+          "боковой басовый динамик",
+          "с фазинвентором"
+        ]
+      },
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "8316.1,162",
+      "width": "2.3109"
+    },
+    {
+      "_gvid": 17,
+      "name": "Комплекты 3.1 Dolby Atmos",
+      "randomIntervals": {
+        "max_power": [130, 150],
+        "max_frequency": [17000, 35000],
+        "min_frequency": [28, 38],
+        "body_height": [745, 890],
+        "wireless": [0, 1],
+        "acoustic_design": [
+          "боковой басовый динамик",
+          "с фазинвентором"
+        ]
+      },
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "8562.1,162",
+      "width": "4.026"
+    },
+    {
+      "_gvid": 18,
+      "name": "Саундбары Dolby Atmos",
+      "randomIntervals": {
+        "max_power": [220, 820],
+        "max_frequency": [17000, 22000],
+        "min_frequency": [20, 44],
+        "body_height": [57, 174],
+        "wireless": [0, 1],
+        "acoustic_design": [
+          "боковой басовый динамик",
+          "с фазинвентором"
+        ]
+      },
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "9480.1,162",
+      "width": "3.4844"
+    },
+    {
+      "_gvid": 19,
+      "name": "Беспроводные саундбары",
+      "randomIntervals": {
+        "max_power": [30, 820],
+        "max_frequency": [15000, 30000],
+        "min_frequency": [20, 90],
+        "body_height": [44, 174],
+        "wireless": [0, 1],
+        "acoustic_design": [
+          "закрытый корпус",
+          "с фазинвентором",
+          "с активным басом",
+          "с динамиком рупорного типа"
+        ]
+      },
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "9823.1,162",
+      "width": "3.7011"
+    },
+    {
+      "_gvid": 20,
+      "name": "Саундбары со встроенным сабвуфером",
+      "randomIntervals": {
+        "max_power": [20, 500],
+        "max_frequency": [20000, 30000],
+        "min_frequency": [20, 90],
+        "body_height": [53, 174],
+        "wireless": [0, 1],
+        "acoustic_design": [
+          "закрытый корпус",
+          "с фазинвентором",
+          "с активным басом",
+          "с динамиком рупорного типа"
+        ]
+      },
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "10218,162",
+      "width": "5.5065"
+    },
+    {
+      "_gvid": 21,
+      "name": "Сценические мониторы",
+      "randomIntervals": {
+        "max_power": [30, 4000],
+        "max_frequency": [1000, 50000],
+        "min_frequency": [100, 350],
+        "body_height": [103, 1420],
+        "wireless": [0, 1],
+        "acoustic_design": [
+          "закрытый корпус",
+          "с фазинвентором"
+        ]
+      },
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "11357,162",
+      "width": "3.4483"
+    },
+    {
+      "_gvid": 22,
+      "name": "Студийные мониторы",
+      "randomIntervals": {
+        "max_power": [20, 2200],
+        "max_frequency": [1000, 50000],
+        "min_frequency": [20, 20000],
+        "body_height": [165, 1180],
+        "wireless": [0, 1],
+        "acoustic_design": [
+          "закрытый корпус",
+          "с фазинвентором"
+        ]
+      },
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "12070,162",
+      "width": "3.1775"
+    },
+    {
+      "_gvid": 23,
+      "name": "Активные",
+      "randomIntervals": {
+        "max_power": [30, 9000],
+        "max_frequency": [60, 150000],
+        "min_frequency": [10, 150],
+        "body_height": [46, 1210],
+        "wireless": [0, 1],
+        "acoustic_design": [
+          "с фазинвентором",
+          "с динамиком рупорного типа",
+          "c активным басом",
+          "закрытый корпус"
+        ]
+      },
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "13443,162",
+      "width": "1.6068"
+    },
+    {
+      "_gvid": 24,
+      "name": "Пассивные",
+      "randomIntervals": {
+        "max_power": [16, 19200],
+        "max_frequency": [1000, 140000],
+        "min_frequency": [10, 115],
+        "body_height": [175, 1350],
+        "wireless": [0, 1],
+        "acoustic_design": [
+          "с фазинвентором",
+          "с динамиком рупорного типа",
+          "открытый",
+          "модульная конструкция",
+          "закрытый корпус"
+        ]
+      },
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "14060,162",
+      "width": "1.7693"
+    },
+    {
+      "_gvid": 25,
+      "name": "Студийные",
+      "randomIntervals": {
+        "max_power": [40, 1000],
+        "max_frequency": [85, 750],
+        "min_frequency": [15, 50],
+        "body_height": [251, 850],
+        "wireless": [0, 1],
+        "acoustic_design": [
+          "закрытый корпус",
+          "с фазинвентором"
+        ]
+      },
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "15143,162",
+      "width": "1.7693"
+    },
+    {
+      "_gvid": 26,
+      "name": "Focal",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "403.14,90",
+      "width": "0.97491"
+    },
+    {
+      "_gvid": 27,
+      "name": "Klipsch",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "1088.1,90",
+      "width": "1.2457"
+    },
+    {
+      "_gvid": 28,
+      "name": "Sonus Faber",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "1560.1,90",
+      "width": "1.9137"
+    },
+    {
+      "_gvid": 29,
+      "name": "Polk Audio",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "2261.1,90",
+      "width": "1.661"
+    },
+    {
+      "_gvid": 30,
+      "name": "B&W",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "2611.1,90",
+      "width": "0.97491"
+    },
+    {
+      "_gvid": 31,
+      "name": "Fyne Audio",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "2929.1,90",
+      "width": "1.7512"
+    },
+    {
+      "_gvid": 32,
+      "name": "Wharfadale",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "3249.1,90",
+      "width": "1.7693"
+    },
+    {
+      "_gvid": 33,
+      "name": "Paradigm",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "3582.1,90",
+      "width": "1.5346"
+    },
+    {
+      "_gvid": 34,
+      "name": "Sonance",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "4199.1,90",
+      "width": "1.3902"
+    },
+    {
+      "_gvid": 35,
+      "name": "Amina",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "4526.1,90",
+      "width": "1.1193"
+    },
+    {
+      "_gvid": 36,
+      "name": "Revox",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "4833.1,90",
+      "width": "1.0832"
+    },
+    {
+      "_gvid": 37,
+      "name": "JBL",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "5810.1,90",
+      "width": "0.75"
+    },
+    {
+      "_gvid": 38,
+      "name": "NORDFOLK",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "6076.1,90",
+      "width": "1.8415"
+    },
+    {
+      "_gvid": 39,
+      "name": "MT-POWER",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "6225.1,90",
+      "width": "1.7873"
+    },
+    {
+      "_gvid": 40,
+      "name": "Martin Logan",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "6588.1,90",
+      "width": "2.0401"
+    },
+    {
+      "_gvid": 41,
+      "name": "Monitor Audio",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "6757.1,90",
+      "width": "2.1484"
+    },
+    {
+      "_gvid": 42,
+      "name": "Heco",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "7523.1,90",
+      "width": "0.95686"
+    },
+    {
+      "_gvid": 43,
+      "name": "Canton",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "7938.1,90",
+      "width": "1.2277"
+    },
+    {
+      "_gvid": 44,
+      "name": "Davis Acoustics",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "8164.1,90",
+      "width": "2.3109"
+    },
+    {
+      "_gvid": 45,
+      "name": "Dali",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "8389.1,90",
+      "width": "0.81243"
+    },
+    {
+      "_gvid": 46,
+      "name": "KEF",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "8562.1,90",
+      "width": "0.84854"
+    },
+    {
+      "_gvid": 47,
+      "name": "Bang & Olufsen",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "9007.1,90",
+      "width": "2.347"
+    },
+    {
+      "_gvid": 48,
+      "name": "Samsung",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "9389.1,90",
+      "width": "1.4985"
+    },
+    {
+      "_gvid": 49,
+      "name": "Sony",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "9534.1,90",
+      "width": "0.93881"
+    },
+    {
+      "_gvid": 50,
+      "name": "Sonos",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "9823.1,90",
+      "width": "1.0652"
+    },
+    {
+      "_gvid": 51,
+      "name": "Q-Acoustics",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "9992.1,90",
+      "width": "1.8234"
+    },
+    {
+      "_gvid": 52,
+      "name": "Audac",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "10143,90",
+      "width": "1.0832"
+    },
+    {
+      "_gvid": 53,
+      "name": "Sennheiser",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "10263,90",
+      "width": "1.7512"
+    },
+    {
+      "_gvid": 54,
+      "name": "Denon",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "10385,90",
+      "width": "1.1193"
+    },
+    {
+      "_gvid": 55,
+      "name": "Behringer",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "10839,90",
+      "width": "1.6068"
+    },
+    {
+      "_gvid": 56,
+      "name": "Invotone",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "11217,90",
+      "width": "1.4263"
+    },
+    {
+      "_gvid": 57,
+      "name": "ECO by VOLTA",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "11507,90",
+      "width": "2.2026"
+    },
+    {
+      "_gvid": 58,
+      "name": "Pioneer",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "12024,90",
+      "width": "1.2818"
+    },
+    {
+      "_gvid": 59,
+      "name": "Yamaha",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "12208,90",
+      "width": "1.2999"
+    },
+    {
+      "_gvid": 60,
+      "name": "Adam Audio",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "12441,90",
+      "width": "1.8415"
+    },
+    {
+      "_gvid": 61,
+      "name": "ADJ",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "12927,90",
+      "width": "0.77632"
+    },
+    {
+      "_gvid": 62,
+      "name": "ANT",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "13365,90",
+      "width": "0.84854"
+    },
+    {
+      "_gvid": 63,
+      "name": "Alto",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "13577,90",
+      "width": "0.81243"
+    },
+    {
+      "_gvid": 64,
+      "name": "CINEMATIC",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "13990,90",
+      "width": "1.8596"
+    },
+    {
+      "_gvid": 65,
+      "name": "Dynacord",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "14183,90",
+      "width": "1.5346"
+    },
+    {
+      "_gvid": 66,
+      "name": "Electro-Voice",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "14514,90",
+      "width": "1.9859"
+    },
+    {
+      "_gvid": 67,
+      "name": "Genelec",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "14997,90",
+      "width": "1.336"
+    },
+    {
+      "_gvid": 68,
+      "name": "NEUMANN",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "15225,90",
+      "width": "1.7873"
+    },
+    {
+      "_gvid": 69,
+      "name": "KRK",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "15536,90",
+      "width": "0.86659"
+    },
+    {
+      "_gvid": 70,
+      "name": "Chora 816",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "59.145,18",
+      "width": "1.6429"
+    },
+    {
+      "_gvid": 71,
+      "name": "Chora 826-D",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "206.14,18",
+      "width": "1.9318"
+    },
+    {
+      "_gvid": 72,
+      "name": "Aria 926",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "344.14,18",
+      "width": "1.3902"
+    },
+    {
+      "_gvid": 73,
+      "name": "Aria 936",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "462.14,18",
+      "width": "1.3902"
+    },
+    {
+      "_gvid": 74,
+      "name": "Spectral 40th",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "604.14,18",
+      "width": "2.0582"
+    },
+    {
+      "_gvid": 75,
+      "name": "Reference R-820F",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "790.14,18",
+      "width": "2.6178"
+    },
+    {
+      "_gvid": 76,
+      "name": "RP-6000F",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "958.14,18",
+      "width": "1.5526"
+    },
+    {
+      "_gvid": 77,
+      "name": "RP-280FA",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "1088.1,18",
+      "width": "1.5526"
+    },
+    {
+      "_gvid": 78,
+      "name": "RF-7 III",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "1207.1,18",
+      "width": "1.2638"
+    },
+    {
+      "_gvid": 79,
+      "name": "Sonetto",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "1317.1,18",
+      "width": "1.2999"
+    },
+    {
+      "_gvid": 80,
+      "name": "Olympica Nova",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "1463.1,18",
+      "width": "2.2567"
+    },
+    {
+      "_gvid": 81,
+      "name": "Serafino Tradition",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "1657.1,18",
+      "width": "2.6359"
+    },
+    {
+      "_gvid": 82,
+      "name": "Cremonese Wenge",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "1867.1,18",
+      "width": "2.69"
+    },
+    {
+      "_gvid": 83,
+      "name": "Aida II",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "2023.1,18",
+      "width": "1.1374"
+    },
+    {
+      "_gvid": 84,
+      "name": "RTi A3",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "2124.1,18",
+      "width": "1.1555"
+    },
+    {
+      "_gvid": 85,
+      "name": "L100",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "2218.1,18",
+      "width": "0.95686"
+    },
+    {
+      "_gvid": 86,
+      "name": "L200",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "2305.1,18",
+      "width": "0.95686"
+    },
+    {
+      "_gvid": 87,
+      "name": "606",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "2386.1,18",
+      "width": "0.79437"
+    },
+    {
+      "_gvid": 88,
+      "name": "607",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "2461.1,18",
+      "width": "0.79437"
+    },
+    {
+      "_gvid": 89,
+      "name": "705",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "2536.1,18",
+      "width": "0.79437"
+    },
+    {
+      "_gvid": 90,
+      "name": "706",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "2611.1,18",
+      "width": "0.79437"
+    },
+    {
+      "_gvid": 91,
+      "name": "707",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "2686.1,18",
+      "width": "0.79437"
+    },
+    {
+      "_gvid": 92,
+      "name": "805",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "2761.1,18",
+      "width": "0.79437"
+    },
+    {
+      "_gvid": 93,
+      "name": "F301",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "2842.1,18",
+      "width": "0.95686"
+    },
+    {
+      "_gvid": 94,
+      "name": "F500",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "2929.1,18",
+      "width": "0.95686"
+    },
+    {
+      "_gvid": 95,
+      "name": "RF700",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "3023.1,18",
+      "width": "1.1555"
+    },
+    {
+      "_gvid": 96,
+      "name": "F701",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "3117.1,18",
+      "width": "0.95686"
+    },
+    {
+      "_gvid": 97,
+      "name": "DFS",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "3200.1,18",
+      "width": "0.84854"
+    },
+    {
+      "_gvid": 98,
+      "name": "EVO 4.S",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "3298.1,18",
+      "width": "1.3721"
+    },
+    {
+      "_gvid": 99,
+      "name": "Surround 1",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "3429.1,18",
+      "width": "1.7693"
+    },
+    {
+      "_gvid": 100,
+      "name": "Millenia ADP",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "3582.1,18",
+      "width": "1.9859"
+    },
+    {
+      "_gvid": 101,
+      "name": "Studio ADP-590",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "3755.1,18",
+      "width": "2.329"
+    },
+    {
+      "_gvid": 102,
+      "name": "Signature ADP3 v.3",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "3958.1,18",
+      "width": "2.7984"
+    },
+    {
+      "_gvid": 103,
+      "name": "ISW",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "4107.1,18",
+      "width": "0.83048"
+    },
+    {
+      "_gvid": 104,
+      "name": "IS4SST",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "4199.1,18",
+      "width": "1.2277"
+    },
+    {
+      "_gvid": 105,
+      "name": "Mobius 7",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "4315.1,18",
+      "width": "1.4985"
+    },
+    {
+      "_gvid": 106,
+      "name": "Re:sound I invisible 20 U mini",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "4538.1,18",
+      "width": "4.1885"
+    },
+    {
+      "_gvid": 107,
+      "name": "Re:sound I invisible 40 C",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "4833.1,18",
+      "width": "3.5025"
+    },
+    {
+      "_gvid": 108,
+      "name": "Re:sound I invisible 80 W",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "5106.1,18",
+      "width": "3.5747"
+    },
+    {
+      "_gvid": 109,
+      "name": "Re:sound I invisible 80 U",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "5380.1,18",
+      "width": "3.5386"
+    },
+    {
+      "_gvid": 110,
+      "name": "CONTROL 12C\/T",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "5614.1,18",
+      "width": "2.4734"
+    },
+    {
+      "_gvid": 111,
+      "name": "CONTROL 14C\/T",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "5810.1,18",
+      "width": "2.4734"
+    },
+    {
+      "_gvid": 112,
+      "name": "NSC106",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "5966.1,18",
+      "width": "1.3721"
+    },
+    {
+      "_gvid": 113,
+      "name": "NSC128",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "6083.1,18",
+      "width": "1.3721"
+    },
+    {
+      "_gvid": 114,
+      "name": "MD-55RT v2",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "6219.1,18",
+      "width": "1.9137"
+    },
+    {
+      "_gvid": 115,
+      "name": "MD-85RT v2",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "6375.1,18",
+      "width": "1.9137"
+    },
+    {
+      "_gvid": 116,
+      "name": "MDC6",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "6958.1,18",
+      "width": "1.1193"
+    },
+    {
+      "_gvid": 117,
+      "name": "DC84",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "7053.1,18",
+      "width": "1.011"
+    },
+    {
+      "_gvid": 118,
+      "name": "HPSQ525",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "7163.1,18",
+      "width": "1.5526"
+    },
+    {
+      "_gvid": 119,
+      "name": "IC3-AW",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "6507.1,18",
+      "width": "1.2638"
+    },
+    {
+      "_gvid": 120,
+      "name": "IC8-AW",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "6616.1,18",
+      "width": "1.2638"
+    },
+    {
+      "_gvid": 121,
+      "name": "AWC265",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "6730.1,18",
+      "width": "1.4082"
+    },
+    {
+      "_gvid": 122,
+      "name": "AWC285",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "6849.1,18",
+      "width": "1.4082"
+    },
+    {
+      "_gvid": 123,
+      "name": "Ambient",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "7287.1,18",
+      "width": "1.3902"
+    },
+    {
+      "_gvid": 124,
+      "name": "Victa Prime 702",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "7440.1,18",
+      "width": "2.3651"
+    },
+    {
+      "_gvid": 125,
+      "name": "Aurora 700",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "7606.1,18",
+      "width": "1.7512"
+    },
+    {
+      "_gvid": 126,
+      "name": "Movie 75",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "7741.1,18",
+      "width": "1.4985"
+    },
+    {
+      "_gvid": 127,
+      "name": "Movie 165",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "7873.1,18",
+      "width": "1.661"
+    },
+    {
+      "_gvid": 128,
+      "name": "Movie 365",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "8011.1,18",
+      "width": "1.661"
+    },
+    {
+      "_gvid": 129,
+      "name": "Discovery Set",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "8164.1,18",
+      "width": "2.0943"
+    },
+    {
+      "_gvid": 130,
+      "name": "Balthus Set",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "8322.1,18",
+      "width": "1.8054"
+    },
+    {
+      "_gvid": 131,
+      "name": "Opticon 5",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "8461.1,18",
+      "width": "1.5526"
+    },
+    {
+      "_gvid": 132,
+      "name": "N4",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "8562.1,18",
+      "width": "0.75"
+    },
+    {
+      "_gvid": 133,
+      "name": "Beosound Stage Anthracite",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "8745.1,18",
+      "width": "3.8274"
+    },
+    {
+      "_gvid": 134,
+      "name": "Beosound Stage Oak",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "9007.1,18",
+      "width": "2.9608"
+    },
+    {
+      "_gvid": 135,
+      "name": "HW-Q60T\/RU",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "9204.1,18",
+      "width": "2.022"
+    },
+    {
+      "_gvid": 136,
+      "name": "HW-Q70R",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "9351.1,18",
+      "width": "1.5526"
+    },
+    {
+      "_gvid": 137,
+      "name": "HW-Q950T",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "9486.1,18",
+      "width": "1.6971"
+    },
+    {
+      "_gvid": 138,
+      "name": "HT-ZF9",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "9610.1,18",
+      "width": "1.2457"
+    },
+    {
+      "_gvid": 139,
+      "name": "BEAM",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "9713.1,18",
+      "width": "1.1193"
+    },
+    {
+      "_gvid": 140,
+      "name": "Playbase",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "9823.1,18",
+      "width": "1.4443"
+    },
+    {
+      "_gvid": 141,
+      "name": "Arc",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "9920.1,18",
+      "width": "0.75"
+    },
+    {
+      "_gvid": 142,
+      "name": "M3",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "9992.1,18",
+      "width": "0.75"
+    },
+    {
+      "_gvid": 143,
+      "name": "M4",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "10064,18",
+      "width": "0.75"
+    },
+    {
+      "_gvid": 144,
+      "name": "IMEO1",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "10153,18",
+      "width": "1.2096"
+    },
+    {
+      "_gvid": 145,
+      "name": "AMBEO",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "10262,18",
+      "width": "1.3179"
+    },
+    {
+      "_gvid": 146,
+      "name": "DHT-S216",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "10385,18",
+      "width": "1.6068"
+    },
+    {
+      "_gvid": 147,
+      "name": "HEOS BAR",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "10523,18",
+      "width": "1.7151"
+    },
+    {
+      "_gvid": 148,
+      "name": "VS1220F",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "10656,18",
+      "width": "1.4804"
+    },
+    {
+      "_gvid": 149,
+      "name": "F1220D",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "10775,18",
+      "width": "1.336"
+    },
+    {
+      "_gvid": 150,
+      "name": "DR115DSP",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "10903,18",
+      "width": "1.7332"
+    },
+    {
+      "_gvid": 151,
+      "name": "AS12MA",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "11034,18",
+      "width": "1.4082"
+    },
+    {
+      "_gvid": 152,
+      "name": "DSX15A",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "11151,18",
+      "width": "1.354"
+    },
+    {
+      "_gvid": 153,
+      "name": "DSX15CMA",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "11283,18",
+      "width": "1.8054"
+    },
+    {
+      "_gvid": 154,
+      "name": "TANGO-10A",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "11432,18",
+      "width": "1.8415"
+    },
+    {
+      "_gvid": 155,
+      "name": "TANGO-12A",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "11583,18",
+      "width": "1.8415"
+    },
+    {
+      "_gvid": 156,
+      "name": "TANGO-15A",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "11734,18",
+      "width": "1.8415"
+    },
+    {
+      "_gvid": 157,
+      "name": "DM-40",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "11861,18",
+      "width": "1.1735"
+    },
+    {
+      "_gvid": 158,
+      "name": "S-DJ80X",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "11970,18",
+      "width": "1.354"
+    },
+    {
+      "_gvid": 159,
+      "name": "RM-07",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "12078,18",
+      "width": "1.1555"
+    },
+    {
+      "_gvid": 160,
+      "name": "HS5",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "12168,18",
+      "width": "0.84854"
+    },
+    {
+      "_gvid": 161,
+      "name": "HS7",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "12247,18",
+      "width": "0.84854"
+    },
+    {
+      "_gvid": 162,
+      "name": "HS8",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "12326,18",
+      "width": "0.84854"
+    },
+    {
+      "_gvid": 163,
+      "name": "T5V",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "12403,18",
+      "width": "0.79437"
+    },
+    {
+      "_gvid": 164,
+      "name": "A3X",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "12479,18",
+      "width": "0.81243"
+    },
+    {
+      "_gvid": 165,
+      "name": "A7X",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "12555,18",
+      "width": "0.81243"
+    },
+    {
+      "_gvid": 166,
+      "name": "AVANTE A18S",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "12680,18",
+      "width": "2.1484"
+    },
+    {
+      "_gvid": 167,
+      "name": "AVANTE A15S",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "12853,18",
+      "width": "2.1484"
+    },
+    {
+      "_gvid": 168,
+      "name": "PXW 18P",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "13002,18",
+      "width": "1.4985"
+    },
+    {
+      "_gvid": 169,
+      "name": "GREENHEAD15s",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "13165,18",
+      "width": "2.5276"
+    },
+    {
+      "_gvid": 170,
+      "name": "GREENHEAD18s",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "13365,18",
+      "width": "2.5276"
+    },
+    {
+      "_gvid": 171,
+      "name": "TS318S",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "13521,18",
+      "width": "1.2999"
+    },
+    {
+      "_gvid": 172,
+      "name": "TX312S",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "13633,18",
+      "width": "1.2999"
+    },
+    {
+      "_gvid": 173,
+      "name": "TS315S",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "13745,18",
+      "width": "1.2999"
+    },
+    {
+      "_gvid": 174,
+      "name": "C-218SW",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "13864,18",
+      "width": "1.4985"
+    },
+    {
+      "_gvid": 175,
+      "name": "C-118SW",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "13990,18",
+      "width": "1.4985"
+    },
+    {
+      "_gvid": 176,
+      "name": "Sub 1.18",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "14114,18",
+      "width": "1.4443"
+    },
+    {
+      "_gvid": 177,
+      "name": "Sub 2.18",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "14236,18",
+      "width": "1.4443"
+    },
+    {
+      "_gvid": 178,
+      "name": "Sub 18",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "14350,18",
+      "width": "1.2096"
+    },
+    {
+      "_gvid": 179,
+      "name": "TX1181",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "14458,18",
+      "width": "1.2818"
+    },
+    {
+      "_gvid": 180,
+      "name": "ELX118",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "14570,18",
+      "width": "1.3179"
+    },
+    {
+      "_gvid": 181,
+      "name": "TX2181",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "14682,18",
+      "width": "1.2818"
+    },
+    {
+      "_gvid": 182,
+      "name": "7350APM",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "14802,18",
+      "width": "1.5526"
+    },
+    {
+      "_gvid": 183,
+      "name": "7360APM",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "14932,18",
+      "width": "1.5526"
+    },
+    {
+      "_gvid": 184,
+      "name": "7370APM",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "15062,18",
+      "width": "1.5526"
+    },
+    {
+      "_gvid": 185,
+      "name": "KH 750 DSP D G",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "15225,18",
+      "width": "2.4734"
+    },
+    {
+      "_gvid": 186,
+      "name": "KH 870 G",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "15388,18",
+      "width": "1.5526"
+    },
+    {
+      "_gvid": 187,
+      "name": "10S2",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "15496,18",
+      "width": "0.95686"
+    },
+    {
+      "_gvid": 188,
+      "name": "8S2",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "15577,18",
+      "width": "0.79437"
+    },
+    {
+      "_gvid": 189,
+      "name": "12S2",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "15658,18",
+      "width": "0.95686"
+    },
+    {
+      "_gvid": 190,
+      "name": "Artsound",
+      "height": "0.5",
+      "label": "\\N",
+      "pos": "7005.1,90",
+      "width": "1.4804"
+    }
+  ],
+  "edges": [
+    {
+      "_gvid": 0,
+      "tail": 0,
+      "head": 1,
+      "pos": "9678,374.28 9475.2,364.26 8766,329.22 8459.3,314.07"
+    },
+    {
+      "_gvid": 1,
+      "tail": 0,
+      "head": 2,
+      "pos": "9788.5,375.22 10069,366.18 11336,325.35 11764,311.56"
+    },
+    {
+      "_gvid": 2,
+      "tail": 1,
+      "head": 3,
+      "pos": "8158.6,302.9 7371.9,292.41 3878.2,245.84 3184.9,236.6"
+    },
+    {
+      "_gvid": 3,
+      "tail": 1,
+      "head": 4,
+      "pos": "8167.5,299.33 7812.7,285.81 6922.5,251.87 6599.6,239.55"
+    },
+    {
+      "_gvid": 4,
+      "tail": 1,
+      "head": 5,
+      "pos": "8316.1,287.7 8316.1,276.85 8316.1,262.92 8316.1,252.1"
+    },
+    {
+      "_gvid": 5,
+      "tail": 1,
+      "head": 6,
+      "pos": "8459.1,297.85 8759.1,282.85 9444,248.61 9653.9,238.11"
+    },
+    {
+      "_gvid": 6,
+      "tail": 2,
+      "head": 7,
+      "pos": "11905,287.7 11905,276.85 11905,262.92 11905,252.1"
+    },
+    {
+      "_gvid": 7,
+      "tail": 2,
+      "head": 8,
+      "pos": "12046,300.01 12439,286.07 13536,247.13 13814,237.28"
+    },
+    {
+      "_gvid": 8,
+      "tail": 3,
+      "head": 9,
+      "pos": "2950.4,228.26 2638.3,215.35 1776.7,179.73 1476.7,167.32"
+    },
+    {
+      "_gvid": 9,
+      "tail": 3,
+      "head": 10,
+      "pos": "3003.7,218.41 2952.3,206.23 2879.6,188.98 2829,176.97"
+    },
+    {
+      "_gvid": 10,
+      "tail": 3,
+      "head": 11,
+      "pos": "3107.4,216.94 3137.5,205.48 3177.8,190.13 3207.8,178.74"
+    },
+    {
+      "_gvid": 11,
+      "tail": 4,
+      "head": 12,
+      "pos": "6360.9,228.37 6029.6,215.49 5101.4,179.41 4785.8,167.14"
+    },
+    {
+      "_gvid": 12,
+      "tail": 4,
+      "head": 13,
+      "pos": "6413,218.75 6356.5,206.78 6276.2,189.74 6219.2,177.65"
+    },
+    {
+      "_gvid": 13,
+      "tail": 4,
+      "head": 14,
+      "pos": "6523.9,217.12 6555.4,205.7 6597.7,190.37 6629.2,178.94"
+    },
+    {
+      "_gvid": 14,
+      "tail": 5,
+      "head": 15,
+      "pos": "8263,218.07 8219.5,205.82 8158.3,188.62 8115.9,176.72"
+    },
+    {
+      "_gvid": 15,
+      "tail": 5,
+      "head": 16,
+      "pos": "8316.1,215.7 8316.1,204.85 8316.1,190.92 8316.1,180.1"
+    },
+    {
+      "_gvid": 16,
+      "tail": 5,
+      "head": 17,
+      "pos": "8368.6,218.07 8409.3,206.51 8465.4,190.53 8506.8,178.76"
+    },
+    {
+      "_gvid": 17,
+      "tail": 6,
+      "head": 18,
+      "pos": "9674,220.49 9634.3,208.73 9574.9,191.1 9532.3,178.46"
+    },
+    {
+      "_gvid": 18,
+      "tail": 6,
+      "head": 19,
+      "pos": "9740.2,217.29 9757.2,206.17 9780,191.26 9797.3,179.88"
+    },
+    {
+      "_gvid": 19,
+      "tail": 6,
+      "head": 20,
+      "pos": "9772.3,225.17 9855,213.63 10011,191.85 10115,177.38"
+    },
+    {
+      "_gvid": 20,
+      "tail": 7,
+      "head": 21,
+      "pos": "11851,226.06 11757,214.03 11562,189.16 11447,174.5"
+    },
+    {
+      "_gvid": 21,
+      "tail": 7,
+      "head": 22,
+      "pos": "11939,218.83 11966,207.33 12004,191.1 12032,179.1"
+    },
+    {
+      "_gvid": 22,
+      "tail": 8,
+      "head": 23,
+      "pos": "13823,224.21 13738,210.51 13575,184.28 13493,171.06"
+    },
+    {
+      "_gvid": 23,
+      "tail": 8,
+      "head": 24,
+      "pos": "13915,219 13946,206.75 13992,189.06 14024,176.85"
+    },
+    {
+      "_gvid": 24,
+      "tail": 8,
+      "head": 25,
+      "pos": "13941,229.5 14158,217.54 14867,178.29 15081,166.43"
+    },
+    {
+      "_gvid": 25,
+      "tail": 9,
+      "head": 26,
+      "pos": "1274.3,153.94 1063.2,138.68 572.59,103.24 437.9,93.511"
+    },
+    {
+      "_gvid": 26,
+      "tail": 9,
+      "head": 27,
+      "pos": "1314,146.67 1257.5,132.75 1173.5,112.03 1125.4,100.19"
+    },
+    {
+      "_gvid": 27,
+      "tail": 9,
+      "head": 28,
+      "pos": "1414.3,145.29 1446.7,133.24 1491,116.75 1522.2,105.11"
+    },
+    {
+      "_gvid": 28,
+      "tail": 10,
+      "head": 29,
+      "pos": "2691.2,150.14 2586.5,135.74 2404.4,110.71 2314.5,98.344"
+    },
+    {
+      "_gvid": 29,
+      "tail": 10,
+      "head": 30,
+      "pos": "2733.7,144.94 2704.1,131.94 2663.3,113.96 2637,102.4"
+    },
+    {
+      "_gvid": 30,
+      "tail": 10,
+      "head": 31,
+      "pos": "2806.6,144.94 2833.7,133.03 2870.2,116.94 2896.3,105.44"
+    },
+    {
+      "_gvid": 31,
+      "tail": 11,
+      "head": 32,
+      "pos": "3249.1,143.7 3249.1,132.85 3249.1,118.92 3249.1,108.1"
+    },
+    {
+      "_gvid": 32,
+      "tail": 11,
+      "head": 33,
+      "pos": "3313.7,147.42 3379.4,133.62 3479.3,112.61 3536.9,100.5"
+    },
+    {
+      "_gvid": 33,
+      "tail": 12,
+      "head": 34,
+      "pos": "4599.6,149.4 4498.2,134.62 4326.4,109.55 4244.8,97.653"
+    },
+    {
+      "_gvid": 34,
+      "tail": 12,
+      "head": 35,
+      "pos": "4643.7,144.76 4616.1,132.16 4578.5,114.96 4553.3,103.43"
+    },
+    {
+      "_gvid": 35,
+      "tail": 12,
+      "head": 36,
+      "pos": "4714.9,144.76 4742.8,132.08 4780.9,114.73 4806.3,103.21"
+    },
+    {
+      "_gvid": 36,
+      "tail": 13,
+      "head": 37,
+      "pos": "6079.7,146.5 6003.8,130.88 5887.1,106.85 5835.8,96.291"
+    },
+    {
+      "_gvid": 37,
+      "tail": 13,
+      "head": 38,
+      "pos": "6132.2,144.05 6120.5,132.97 6105.3,118.55 6093.6,107.55"
+    },
+    {
+      "_gvid": 38,
+      "tail": 13,
+      "head": 39,
+      "pos": "6168.3,144.05 6180.2,132.97 6195.6,118.55 6207.4,107.55"
+    },
+    {
+      "_gvid": 39,
+      "tail": 14,
+      "head": 40,
+      "pos": "6652.6,144.05 6639.1,132.97 6621.6,118.55 6608.2,107.55"
+    },
+    {
+      "_gvid": 40,
+      "tail": 14,
+      "head": 41,
+      "pos": "6693.5,144.05 6706.8,132.97 6724.1,118.55 6737.3,107.55"
+    },
+    {
+      "_gvid": 41,
+      "tail": 14,
+      "head": 190,
+      "pos": "6740.3,146.83 6806.1,132.97 6904.3,112.25 6960.8,100.34"
+    },
+    {
+      "_gvid": 42,
+      "tail": 15,
+      "head": 42,
+      "pos": "7997.7,152.06 7879.4,136.84 7643.2,106.44 7556.2,95.259"
+    },
+    {
+      "_gvid": 43,
+      "tail": 15,
+      "head": 43,
+      "pos": "8037.9,145.12 8015.6,133.01 7985.2,116.52 7963.8,104.93"
+    },
+    {
+      "_gvid": 44,
+      "tail": 15,
+      "head": 44,
+      "pos": "8090.1,144.41 8105.6,133.25 8125.9,118.6 8141.3,107.47"
+    },
+    {
+      "_gvid": 45,
+      "tail": 16,
+      "head": 45,
+      "pos": "8333.8,144.05 8346,132.4 8362,117.07 8373.6,105.89"
+    },
+    {
+      "_gvid": 46,
+      "tail": 17,
+      "head": 46,
+      "pos": "8562.1,143.7 8562.1,132.85 8562.1,118.92 8562.1,108.1"
+    },
+    {
+      "_gvid": 47,
+      "tail": 18,
+      "head": 47,
+      "pos": "9396.1,148.57 9304.3,134.97 9158.9,113.46 9074.3,100.94"
+    },
+    {
+      "_gvid": 48,
+      "tail": 18,
+      "head": 48,
+      "pos": "9458.1,144.05 9443.4,132.73 9424.1,117.92 9409.7,106.83"
+    },
+    {
+      "_gvid": 49,
+      "tail": 18,
+      "head": 49,
+      "pos": "9493.2,144.05 9502,132.73 9513.4,117.92 9521.9,106.83"
+    },
+    {
+      "_gvid": 50,
+      "tail": 19,
+      "head": 50,
+      "pos": "9823.1,143.7 9823.1,132.85 9823.1,118.92 9823.1,108.1"
+    },
+    {
+      "_gvid": 51,
+      "tail": 19,
+      "head": 51,
+      "pos": "9862.3,144.76 9891.1,132.85 9929.8,116.82 9957.5,105.37"
+    },
+    {
+      "_gvid": 52,
+      "tail": 20,
+      "head": 52,
+      "pos": "10200,144.05 10188,132.56 10172,117.5 10160,106.36"
+    },
+    {
+      "_gvid": 53,
+      "tail": 20,
+      "head": 53,
+      "pos": "10229,143.7 10236,132.85 10245,118.92 10252,108.1"
+    },
+    {
+      "_gvid": 54,
+      "tail": 20,
+      "head": 54,
+      "pos": "10258,144.23 10289,131.49 10330,114.28 10357,102.92"
+    },
+    {
+      "_gvid": 55,
+      "tail": 21,
+      "head": 55,
+      "pos": "11270,149.17 11161,134.51 10980,110.01 10891,98.029"
+    },
+    {
+      "_gvid": 56,
+      "tail": 21,
+      "head": 56,
+      "pos": "11324,144.59 11300,132.63 11268,116.59 11246,105.18"
+    },
+    {
+      "_gvid": 57,
+      "tail": 21,
+      "head": 57,
+      "pos": "11392,144.59 11417,133.07 11450,117.77 11474,106.47"
+    },
+    {
+      "_gvid": 58,
+      "tail": 22,
+      "head": 58,
+      "pos": "12059,144.05 12052,133.05 12042,118.76 12035,107.79"
+    },
+    {
+      "_gvid": 59,
+      "tail": 22,
+      "head": 59,
+      "pos": "12102,144.59 12126,132.47 12159,116.15 12181,104.72"
+    },
+    {
+      "_gvid": 60,
+      "tail": 22,
+      "head": 60,
+      "pos": "12140,147.75 12213,134.14 12323,113.25 12388,100.97"
+    },
+    {
+      "_gvid": 61,
+      "tail": 23,
+      "head": 61,
+      "pos": "13391,153.97 13283,139.28 13036,105.81 12954,94.678"
+    },
+    {
+      "_gvid": 62,
+      "tail": 23,
+      "head": 62,
+      "pos": "13425,144.76 13412,132.89 13394,116.93 13381,105.48"
+    },
+    {
+      "_gvid": 63,
+      "tail": 23,
+      "head": 63,
+      "pos": "13472,146.15 13497,133.07 13533,114.29 13555,102.37"
+    },
+    {
+      "_gvid": 64,
+      "tail": 24,
+      "head": 64,
+      "pos": "14044,144.41 14032,133.25 14018,118.6 14007,107.47"
+    },
+    {
+      "_gvid": 65,
+      "tail": 24,
+      "head": 65,
+      "pos": "14087,145.64 14108,133.89 14136,117.77 14157,106.09"
+    },
+    {
+      "_gvid": 66,
+      "tail": 24,
+      "head": 66,
+      "pos": "14115,152.56 14201,139.32 14366,113.79 14455,100.14"
+    },
+    {
+      "_gvid": 67,
+      "tail": 25,
+      "head": 67,
+      "pos": "15112,146.15 15087,133.87 15050,116.57 15026,104.64"
+    },
+    {
+      "_gvid": 68,
+      "tail": 25,
+      "head": 68,
+      "pos": "15162,144.76 15175,133.54 15193,118.65 15206,107.39"
+    },
+    {
+      "_gvid": 69,
+      "tail": 25,
+      "head": 69,
+      "pos": "15196,151.63 15279,136.73 15440,108.11 15506,96.295"
+    },
+    {
+      "_gvid": 70,
+      "tail": 26,
+      "head": 70,
+      "pos": "370.31,83.301 318.47,74.167 214.57,55.307 127.14,36 119.18,34.242 110.73,32.24 102.59,30.241"
+    },
+    {
+      "_gvid": 71,
+      "tail": 26,
+      "head": 71,
+      "pos": "374.92,78.971 340.98,66.911 283.82,46.599 245.54,32.999"
+    },
+    {
+      "_gvid": 72,
+      "tail": 26,
+      "head": 72,
+      "pos": "389.76,73.116 380.37,61.983 367.85,47.127 358.3,35.797"
+    },
+    {
+      "_gvid": 73,
+      "tail": 26,
+      "head": 73,
+      "pos": "416.53,73.116 425.92,61.983 438.44,47.127 447.99,35.797"
+    },
+    {
+      "_gvid": 74,
+      "tail": 26,
+      "head": 74,
+      "pos": "431.52,79.119 465.93,67.135 524.19,46.846 563.4,33.191"
+    },
+    {
+      "_gvid": 75,
+      "tail": 27,
+      "head": 75,
+      "pos": "1050.4,80.134 999.11,68.086 906.95,46.438 847.19,32.401"
+    },
+    {
+      "_gvid": 76,
+      "tail": 27,
+      "head": 76,
+      "pos": "1062.5,75.17 1040.3,63.217 1008.3,45.987 985.57,33.768"
+    },
+    {
+      "_gvid": 77,
+      "tail": 27,
+      "head": 77,
+      "pos": "1088.1,71.697 1088.1,60.846 1088.1,46.917 1088.1,36.104"
+    },
+    {
+      "_gvid": 78,
+      "tail": 27,
+      "head": 78,
+      "pos": "1112.5,74.666 1133,62.586 1162.3,45.39 1182.8,33.315"
+    },
+    {
+      "_gvid": 79,
+      "tail": 28,
+      "head": 79,
+      "pos": "1514.7,76.383 1476.8,65.79 1421.4,50.158 1373.1,36 1366.5,34.054 1359.5,31.943 1352.7,29.891"
+    },
+    {
+      "_gvid": 80,
+      "tail": 28,
+      "head": 80,
+      "pos": "1537.6,72.765 1522.1,61.537 1501.5,46.651 1485.9,35.39"
+    },
+    {
+      "_gvid": 81,
+      "tail": 28,
+      "head": 81,
+      "pos": "1582.6,72.765 1598.1,61.618 1618.5,46.865 1634.1,35.633"
+    },
+    {
+      "_gvid": 82,
+      "tail": 28,
+      "head": 82,
+      "pos": "1610.2,77.597 1664.4,65.22 1751,45.472 1808.5,32.372"
+    },
+    {
+      "_gvid": 83,
+      "tail": 28,
+      "head": 83,
+      "pos": "1626,84.636 1708.1,78.26 1852.4,63.984 1973.1,36 1979.7,34.489 1986.5,32.458 1993,30.325"
+    },
+    {
+      "_gvid": 84,
+      "tail": 29,
+      "head": 84,
+      "pos": "2232.1,74.155 2207.7,61.714 2173.3,44.119 2149.9,32.172"
+    },
+    {
+      "_gvid": 85,
+      "tail": 29,
+      "head": 85,
+      "pos": "2250.7,72.055 2243.9,60.887 2234.9,46.343 2228.2,35.307"
+    },
+    {
+      "_gvid": 86,
+      "tail": 29,
+      "head": 86,
+      "pos": "2271.8,72.055 2278.8,60.887 2288,46.343 2294.9,35.307"
+    },
+    {
+      "_gvid": 87,
+      "tail": 30,
+      "head": 87,
+      "pos": "2579.7,81.737 2542,72.654 2477.1,55.857 2423.1,36 2418.2,34.193 2413.1,32.01 2408.2,29.82"
+    },
+    {
+      "_gvid": 88,
+      "tail": 30,
+      "head": 88,
+      "pos": "2586,77.284 2557.3,63.895 2510.8,42.187 2483.4,29.383"
+    },
+    {
+      "_gvid": 89,
+      "tail": 30,
+      "head": 89,
+      "pos": "2594.9,73.811 2582,61.828 2564.2,45.227 2551.6,33.442"
+    },
+    {
+      "_gvid": 90,
+      "tail": 30,
+      "head": 90,
+      "pos": "2611.1,71.697 2611.1,60.846 2611.1,46.917 2611.1,36.104"
+    },
+    {
+      "_gvid": 91,
+      "tail": 30,
+      "head": 91,
+      "pos": "2627.4,73.811 2640.3,61.828 2658,45.227 2670.7,33.442"
+    },
+    {
+      "_gvid": 92,
+      "tail": 30,
+      "head": 92,
+      "pos": "2636.3,77.284 2664.9,63.895 2711.5,42.187 2738.9,29.383"
+    },
+    {
+      "_gvid": 93,
+      "tail": 31,
+      "head": 93,
+      "pos": "2909,72.765 2894.2,60.891 2874.4,44.925 2860.1,33.483"
+    },
+    {
+      "_gvid": 94,
+      "tail": 31,
+      "head": 94,
+      "pos": "2929.1,71.697 2929.1,60.846 2929.1,46.917 2929.1,36.104"
+    },
+    {
+      "_gvid": 95,
+      "tail": 31,
+      "head": 95,
+      "pos": "2950.9,72.765 2966.7,61.052 2987.7,45.359 3003.1,33.952"
+    },
+    {
+      "_gvid": 96,
+      "tail": 31,
+      "head": 96,
+      "pos": "2966.8,75.541 2996.1,64.985 3037.8,49.816 3074.1,36 3079.4,34.002 3085,31.826 3090.3,29.718"
+    },
+    {
+      "_gvid": 97,
+      "tail": 32,
+      "head": 97,
+      "pos": "3237.3,72.055 3229.4,60.726 3219,45.92 3211.2,34.829"
+    },
+    {
+      "_gvid": 98,
+      "tail": 32,
+      "head": 98,
+      "pos": "3261,72.055 3268.7,61.049 3278.7,46.764 3286.4,35.789"
+    },
+    {
+      "_gvid": 99,
+      "tail": 33,
+      "head": 99,
+      "pos": "3551.6,75.003 3525.4,63.033 3487.9,45.864 3461.3,33.697"
+    },
+    {
+      "_gvid": 100,
+      "tail": 33,
+      "head": 100,
+      "pos": "3582.1,71.697 3582.1,60.846 3582.1,46.917 3582.1,36.104"
+    },
+    {
+      "_gvid": 101,
+      "tail": 33,
+      "head": 101,
+      "pos": "3615.5,75.503 3644.8,63.664 3687.3,46.465 3717.7,34.157"
+    },
+    {
+      "_gvid": 102,
+      "tail": 33,
+      "head": 102,
+      "pos": "3629,80.276 3695,67.998 3815.5,45.555 3891,31.504"
+    },
+    {
+      "_gvid": 103,
+      "tail": 34,
+      "head": 103,
+      "pos": "4178.7,73.465 4162.6,61.22 4140.4,44.315 4125,32.6"
+    },
+    {
+      "_gvid": 104,
+      "tail": 34,
+      "head": 104,
+      "pos": "4199.1,71.697 4199.1,60.846 4199.1,46.917 4199.1,36.104"
+    },
+    {
+      "_gvid": 105,
+      "tail": 35,
+      "head": 105,
+      "pos": "4494.6,78.52 4456.4,65.858 4392.3,44.59 4351.9,31.202"
+    },
+    {
+      "_gvid": 106,
+      "tail": 36,
+      "head": 106,
+      "pos": "4799.3,80.97 4751.5,69.622 4663.2,48.676 4602.6,34.302"
+    },
+    {
+      "_gvid": 107,
+      "tail": 36,
+      "head": 107,
+      "pos": "4833.1,71.697 4833.1,60.846 4833.1,46.917 4833.1,36.104"
+    },
+    {
+      "_gvid": 108,
+      "tail": 36,
+      "head": 108,
+      "pos": "4866.3,80.487 4911.3,68.973 4992.1,48.25 5047.4,34.071"
+    },
+    {
+      "_gvid": 109,
+      "tail": 36,
+      "head": 109,
+      "pos": "4870.3,84.244 4955.6,73.335 5167.2,46.255 5289.3,30.627"
+    },
+    {
+      "_gvid": 110,
+      "tail": 37,
+      "head": 110,
+      "pos": "5786.9,80.695 5754.7,69.215 5696.2,48.301 5656.2,34.035"
+    },
+    {
+      "_gvid": 111,
+      "tail": 37,
+      "head": 111,
+      "pos": "5810.1,71.697 5810.1,60.846 5810.1,46.917 5810.1,36.104"
+    },
+    {
+      "_gvid": 112,
+      "tail": 38,
+      "head": 112,
+      "pos": "6051.5,73.291 6033,61.52 6007.8,45.517 5989.6,33.938"
+    },
+    {
+      "_gvid": 113,
+      "tail": 38,
+      "head": 113,
+      "pos": "6077.9,71.697 6079,60.846 6080.4,46.917 6081.4,36.104"
+    },
+    {
+      "_gvid": 114,
+      "tail": 39,
+      "head": 114,
+      "pos": "6223.7,71.697 6222.7,60.846 6221.5,46.917 6220.6,36.104"
+    },
+    {
+      "_gvid": 115,
+      "tail": 39,
+      "head": 115,
+      "pos": "6257,74.155 6282.3,62.316 6317.7,45.809 6343.1,33.944"
+    },
+    {
+      "_gvid": 116,
+      "tail": 40,
+      "head": 119,
+      "pos": "6568.9,72.411 6555.8,61.01 6538.3,45.965 6525.4,34.749"
+    },
+    {
+      "_gvid": 117,
+      "tail": 40,
+      "head": 120,
+      "pos": "6594.9,72.055 6599.3,61.211 6604.9,47.183 6609.2,36.275"
+    },
+    {
+      "_gvid": 118,
+      "tail": 41,
+      "head": 121,
+      "pos": "6750.6,72.055 6746.4,61.211 6741,47.183 6736.8,36.275"
+    },
+    {
+      "_gvid": 119,
+      "tail": 41,
+      "head": 122,
+      "pos": "6778.9,72.411 6794,60.929 6814,45.751 6828.8,34.511"
+    },
+    {
+      "_gvid": 120,
+      "tail": 42,
+      "head": 123,
+      "pos": "7493.7,80.276 7451,67.595 7371.7,44.07 7324.7,30.148"
+    },
+    {
+      "_gvid": 121,
+      "tail": 42,
+      "head": 124,
+      "pos": "7505.5,74.155 7492.1,62.837 7473.6,47.255 7459.8,35.539"
+    },
+    {
+      "_gvid": 122,
+      "tail": 42,
+      "head": 125,
+      "pos": "7540.7,74.155 7554.3,62.757 7572.9,47.034 7586.8,35.29"
+    },
+    {
+      "_gvid": 123,
+      "tail": 43,
+      "head": 126,
+      "pos": "7906.1,77.597 7870.5,64.968 7813.4,44.665 7776.6,31.581"
+    },
+    {
+      "_gvid": 124,
+      "tail": 43,
+      "head": 127,
+      "pos": "7923.1,72.765 7912.7,61.618 7899,46.865 7888.6,35.633"
+    },
+    {
+      "_gvid": 125,
+      "tail": 43,
+      "head": 128,
+      "pos": "7954.7,73.116 7966.5,61.821 7982.3,46.696 7994.1,35.307"
+    },
+    {
+      "_gvid": 126,
+      "tail": 44,
+      "head": 129,
+      "pos": "8164.1,71.697 8164.1,60.846 8164.1,46.917 8164.1,36.104"
+    },
+    {
+      "_gvid": 127,
+      "tail": 44,
+      "head": 130,
+      "pos": "8199.2,73.465 8226,61.583 8262.8,45.312 8289.1,33.654"
+    },
+    {
+      "_gvid": 128,
+      "tail": 45,
+      "head": 131,
+      "pos": "8404.1,74.496 8415.8,63.043 8432.3,47.069 8444.5,35.198"
+    },
+    {
+      "_gvid": 129,
+      "tail": 46,
+      "head": 132,
+      "pos": "8562.1,71.697 8562.1,60.846 8562.1,46.917 8562.1,36.104"
+    },
+    {
+      "_gvid": 130,
+      "tail": 47,
+      "head": 133,
+      "pos": "8956.6,75.503 8912.6,63.744 8848.8,46.696 8802.8,34.405"
+    },
+    {
+      "_gvid": 131,
+      "tail": 47,
+      "head": 134,
+      "pos": "9007.1,71.697 9007.1,60.846 9007.1,46.917 9007.1,36.104"
+    },
+    {
+      "_gvid": 132,
+      "tail": 48,
+      "head": 135,
+      "pos": "9354.8,75.998 9322.8,63.899 9275.2,45.903 9242.1,33.38"
+    },
+    {
+      "_gvid": 133,
+      "tail": 48,
+      "head": 136,
+      "pos": "9379.9,72.055 9374,61.049 9366.2,46.764 9360.3,35.789"
+    },
+    {
+      "_gvid": 134,
+      "tail": 48,
+      "head": 137,
+      "pos": "9410.7,73.465 9426.5,62.026 9448,46.519 9464,34.977"
+    },
+    {
+      "_gvid": 135,
+      "tail": 49,
+      "head": 138,
+      "pos": "9550.3,74.155 9562.8,62.597 9580.2,46.59 9593,34.797"
+    },
+    {
+      "_gvid": 136,
+      "tail": 50,
+      "head": 139,
+      "pos": "9801.1,75.003 9782.1,62.874 9754.6,45.405 9735.5,33.213"
+    },
+    {
+      "_gvid": 137,
+      "tail": 50,
+      "head": 140,
+      "pos": "9823.1,71.697 9823.1,60.846 9823.1,46.917 9823.1,36.104"
+    },
+    {
+      "_gvid": 138,
+      "tail": 50,
+      "head": 141,
+      "pos": "9843.2,74.496 9860.7,61.922 9885.6,43.898 9902.4,31.838"
+    },
+    {
+      "_gvid": 139,
+      "tail": 51,
+      "head": 142,
+      "pos": "9992.1,71.697 9992.1,60.846 9992.1,46.917 9992.1,36.104"
+    },
+    {
+      "_gvid": 140,
+      "tail": 51,
+      "head": 143,
+      "pos": "10009,72.411 10021,60.606 10038,44.893 10049,33.57"
+    },
+    {
+      "_gvid": 141,
+      "tail": 52,
+      "head": 144,
+      "pos": "10146,71.697 10147,60.846 10149,46.917 10151,36.104"
+    },
+    {
+      "_gvid": 142,
+      "tail": 53,
+      "head": 145,
+      "pos": "10263,71.697 10263,60.846 10263,46.917 10262,36.104"
+    },
+    {
+      "_gvid": 143,
+      "tail": 54,
+      "head": 146,
+      "pos": "10385,71.697 10385,60.846 10385,46.917 10385,36.104"
+    },
+    {
+      "_gvid": 144,
+      "tail": 54,
+      "head": 147,
+      "pos": "10411,75.998 10434,64.057 10469,46.372 10494,33.874"
+    },
+    {
+      "_gvid": 145,
+      "tail": 55,
+      "head": 148,
+      "pos": "10804,75.503 10771,62.949 10722,44.368 10690,31.982"
+    },
+    {
+      "_gvid": 146,
+      "tail": 55,
+      "head": 149,
+      "pos": "10824,72.411 10814,61.252 10800,46.604 10790,35.47"
+    },
+    {
+      "_gvid": 147,
+      "tail": 55,
+      "head": 150,
+      "pos": "10854,72.411 10865,61.252 10878,46.604 10888,35.47"
+    },
+    {
+      "_gvid": 148,
+      "tail": 56,
+      "head": 151,
+      "pos": "11184,76.161 11151,63.531 11100,44.36 11067,31.758"
+    },
+    {
+      "_gvid": 149,
+      "tail": 56,
+      "head": 152,
+      "pos": "11202,72.765 11191,61.456 11177,46.437 11166,35.147"
+    },
+    {
+      "_gvid": 150,
+      "tail": 56,
+      "head": 153,
+      "pos": "11232,72.765 11243,61.618 11257,46.865 11267,35.633"
+    },
+    {
+      "_gvid": 151,
+      "tail": 57,
+      "head": 154,
+      "pos": "11489,72.411 11477,61.252 11462,46.604 11450,35.47"
+    },
+    {
+      "_gvid": 152,
+      "tail": 57,
+      "head": 155,
+      "pos": "11525,72.411 11537,61.252 11553,46.604 11565,35.47"
+    },
+    {
+      "_gvid": 153,
+      "tail": 57,
+      "head": 156,
+      "pos": "11552,75.087 11593,62.527 11652,44.192 11692,31.942"
+    },
+    {
+      "_gvid": 154,
+      "tail": 58,
+      "head": 157,
+      "pos": "11994,76.161 11964,63.373 11919,43.879 11890,31.288"
+    },
+    {
+      "_gvid": 155,
+      "tail": 58,
+      "head": 158,
+      "pos": "12011,72.411 12003,61.252 11991,46.604 11983,35.47"
+    },
+    {
+      "_gvid": 156,
+      "tail": 58,
+      "head": 159,
+      "pos": "12037,72.411 12046,61.252 12057,46.604 12065,35.47"
+    },
+    {
+      "_gvid": 157,
+      "tail": 59,
+      "head": 160,
+      "pos": "12198,72.055 12192,60.887 12184,46.343 12177,35.307"
+    },
+    {
+      "_gvid": 158,
+      "tail": 59,
+      "head": 161,
+      "pos": "12218,72.055 12224,60.887 12232,46.343 12238,35.307"
+    },
+    {
+      "_gvid": 159,
+      "tail": 59,
+      "head": 162,
+      "pos": "12233,74.496 12254,61.761 12285,43.438 12305,31.38"
+    },
+    {
+      "_gvid": 160,
+      "tail": 60,
+      "head": 163,
+      "pos": "12432,72.055 12426,60.887 12418,46.343 12412,35.307"
+    },
+    {
+      "_gvid": 161,
+      "tail": 60,
+      "head": 164,
+      "pos": "12450,72.055 12456,60.887 12464,46.343 12470,35.307"
+    },
+    {
+      "_gvid": 162,
+      "tail": 60,
+      "head": 165,
+      "pos": "12467,73.291 12487,60.634 12516,43.082 12535,31.399"
+    },
+    {
+      "_gvid": 163,
+      "tail": 61,
+      "head": 166,
+      "pos": "12902,81.903 12861,70.294 12779,47.062 12727,32.313"
+    },
+    {
+      "_gvid": 164,
+      "tail": 61,
+      "head": 167,
+      "pos": "12912,74.496 12900,63.203 12883,47.515 12871,35.699"
+    },
+    {
+      "_gvid": 165,
+      "tail": 61,
+      "head": 168,
+      "pos": "12942,74.834 12955,63.329 12972,47.101 12985,35.103"
+    },
+    {
+      "_gvid": 166,
+      "tail": 62,
+      "head": 169,
+      "pos": "13339,79.992 13306,68.36 13248,47.955 13208,33.974"
+    },
+    {
+      "_gvid": 167,
+      "tail": 62,
+      "head": 170,
+      "pos": "13365,71.697 13365,60.846 13365,46.917 13365,36.104"
+    },
+    {
+      "_gvid": 168,
+      "tail": 63,
+      "head": 171,
+      "pos": "13565,73.465 13556,62.187 13544,46.955 13534,35.467"
+    },
+    {
+      "_gvid": 169,
+      "tail": 63,
+      "head": 172,
+      "pos": "13590,73.465 13599,62.187 13611,46.955 13620,35.467"
+    },
+    {
+      "_gvid": 170,
+      "tail": 63,
+      "head": 173,
+      "pos": "13601,79.119 13631,66.72 13682,45.432 13714,31.799"
+    },
+    {
+      "_gvid": 171,
+      "tail": 64,
+      "head": 174,
+      "pos": "13962,73.465 13941,61.623 13912,45.422 13891,33.773"
+    },
+    {
+      "_gvid": 172,
+      "tail": 64,
+      "head": 175,
+      "pos": "13990,71.697 13990,60.846 13990,46.917 13990,36.104"
+    },
+    {
+      "_gvid": 173,
+      "tail": 65,
+      "head": 176,
+      "pos": "14167,72.765 14156,61.456 14141,46.437 14130,35.147"
+    },
+    {
+      "_gvid": 174,
+      "tail": 65,
+      "head": 177,
+      "pos": "14196,72.411 14204,61.414 14215,47.027 14223,35.956"
+    },
+    {
+      "_gvid": 175,
+      "tail": 65,
+      "head": 178,
+      "pos": "14216,75.337 14246,62.565 14291,43.664 14321,31.339"
+    },
+    {
+      "_gvid": 176,
+      "tail": 66,
+      "head": 179,
+      "pos": "14501,72.055 14492,60.887 14480,46.343 14471,35.307"
+    },
+    {
+      "_gvid": 177,
+      "tail": 66,
+      "head": 180,
+      "pos": "14528,72.055 14537,60.887 14548,46.343 14557,35.307"
+    },
+    {
+      "_gvid": 178,
+      "tail": 66,
+      "head": 181,
+      "pos": "14549,74.326 14580,61.697 14623,43.666 14652,31.66"
+    },
+    {
+      "_gvid": 179,
+      "tail": 67,
+      "head": 182,
+      "pos": "14964,76.967 14929,64.419 14874,44.82 14838,31.943"
+    },
+    {
+      "_gvid": 180,
+      "tail": 67,
+      "head": 183,
+      "pos": "14982,72.765 14972,61.618 14958,46.865 14948,35.633"
+    },
+    {
+      "_gvid": 181,
+      "tail": 67,
+      "head": 184,
+      "pos": "15012,72.765 15023,61.618 15036,46.865 15047,35.633"
+    },
+    {
+      "_gvid": 182,
+      "tail": 68,
+      "head": 185,
+      "pos": "15225,71.697 15225,60.846 15225,46.917 15225,36.104"
+    },
+    {
+      "_gvid": 183,
+      "tail": 68,
+      "head": 186,
+      "pos": "15259,74.496 15287,62.242 15328,44.813 15356,32.771"
+    },
+    {
+      "_gvid": 184,
+      "tail": 69,
+      "head": 187,
+      "pos": "15527,72.765 15520,61.618 15512,46.865 15506,35.633"
+    },
+    {
+      "_gvid": 185,
+      "tail": 69,
+      "head": 188,
+      "pos": "15546,72.765 15552,61.456 15561,46.437 15568,35.147"
+    },
+    {
+      "_gvid": 186,
+      "tail": 69,
+      "head": 189,
+      "pos": "15557,76.807 15579,64.194 15614,44.582 15636,31.763"
+    },
+    {
+      "_gvid": 187,
+      "tail": 190,
+      "head": 116,
+      "pos": "6993.8,72.055 6986.4,61.049 6976.8,46.764 6969.4,35.789"
+    },
+    {
+      "_gvid": 188,
+      "tail": 190,
+      "head": 117,
+      "pos": "7016.5,72.411 7024.2,61.252 7034.2,46.604 7041.9,35.47"
+    },
+    {
+      "_gvid": 189,
+      "tail": 190,
+      "head": 118,
+      "pos": "7036.4,75.17 7064,62.938 7104.1,45.18 7131.7,32.921"
+    }
+  ]
+}
