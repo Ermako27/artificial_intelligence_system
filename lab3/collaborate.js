@@ -1,9 +1,19 @@
+const fs = require('fs');
 const {usersMatrix} = require('./data/usersMatrix.json');
-const tree = require('../../lab1/audioTree.json');
+const tree = require('../lab1/audioTree.json');
 
+// для кого считаем рекомендации
 const targetUser = usersMatrix[0];
+
+// количество листьев (продуктов)
 const {leaves} = tree;
 const leavesCount = leaves.length;
+
+// количество пользователей для рекомендаций
+const MOST_CORRELATED_USERS_COUNT = 10;
+
+// количество рекомендаций
+const RECOMENDATIONS_COUNT = 10;
 
 /**
  * http://statistica.ru/theory/koeffitsient-korrelyatsii/
@@ -31,37 +41,46 @@ function correlation(vec1, vec2) {
 
 /**
  * считаем корреляцию между текущим пользователем и всеми остальными пользователями
- * массив объектов пользователей, с посчитанными корреляциями
+ * @param {*} targetUser - пользователь для которого считаются рекомендации
+ * @param {*} users - массив пользователей
+ * @return массив объектов пользователей с полем correlation - int посчитанная корреляция
  */
 function calculateUserCorrelation(targetUser, users) {
 
     // массив объектов пользователей, с посчитанными корреляциями
     const usersWithCorrelation = []
 
-    // фильтруем текущего пользователя, для которого будет считаться корреляция со всеми остальными
+    // убираем текущего пользователя, для которого будет считаться корреляция со всеми остальными
     const usersForCorrelation = users.filter((user) => user.name !== targetUser.name);
 
+    // считаем корреляцию для каждого юзера
     for (let user of usersForCorrelation) {
         user.correlation = correlation(targetUser.marks, user.marks);
         usersWithCorrelation.push(user);
     }
 
+    fs.writeFileSync('./debug/calculateUserCorrelation.json', JSON.stringify(usersWithCorrelation));
     return usersWithCorrelation;
 }
 
-// достаем countOfUsers самых коррелирущих пользователей, сортировка по убыванию
-function selectClosestUsers(countOfUsers, usersWithCorrelation) {
+/**
+ * достаем MOST_CORRELATED_USERS_COUNT самых коррелирущих пользователей, сортируем по убыванию по убыванию
+ * @param {*} usersWithCorrelation  - массив пользователей с посчитанной корреляцией
+ * @return массив наиболее коррелирующих пользователей
+ */
+function selectClosestUsers(usersWithCorrelation) {
     const sortedUsers = usersWithCorrelation.sort((user1, user2) => user2.correlation - user1.correlation);
-    return sortedUsers.slice(0, countOfUsers + 1);
+
+    fs.writeFileSync('./debug/selectClosestUsers.json', JSON.stringify({sortedUsers, slice: sortedUsers.slice(0, MOST_CORRELATED_USERS_COUNT)}));
+    return sortedUsers.slice(0, MOST_CORRELATED_USERS_COUNT);
 }
 
-function calculateRecomendations(targetUser, usersMatrix, recomendationsCount) {
+function calculateRecomendations(targetUser, usersMatrix) {
     const usersWithCorrelation = calculateUserCorrelation(targetUser, usersMatrix);
-    const mostCorrelatedUsers = selectClosestUsers(10, usersWithCorrelation);
+    const mostCorrelatedUsers = selectClosestUsers(usersWithCorrelation);
 
     // сумма значений корреляций наиболее коррелирующих пользователей
     const correlationValuesSum = mostCorrelatedUsers.reduce((acc, user) => user.correlation + acc, 0);
-
 
     // у каждого пользователя умножаем его оценку каждого продукта на его коэффициент корреляции
     // таким образом оценки более «похожих» пользователей будут сильнее влиять на итоговую позицию продукта
@@ -72,33 +91,42 @@ function calculateRecomendations(targetUser, usersMatrix, recomendationsCount) {
         }
     }
 
+    fs.writeFileSync('./debug/userСalibratedMarks.json', JSON.stringify({mostCorrelatedUsers}));
+
     /**
      * Для каждого из продуктов считает сумму калиброванных оценок наиболее близких пользователей
      * полученную сумму делим на сумму корреляций выбранных пользователей.
      */
     const productCorrelations = [];
     for (let i = 0; i < leavesCount; i++) {
-        const productCorrelation = {productId: i, correlation: 0};
+        const productCorrelation = {productId: i, calibratedMarksSum: 0};
         for (let user of mostCorrelatedUsers) {
-            productCorrelation.correlation += user.calibratedMarks[i];
+            productCorrelation.calibratedMarksSum += user.calibratedMarks[i];
         }
-        productCorrelation.correlation /= correlationValuesSum;
-        productCorrelations.push(productCorrelations)
+        productCorrelation.calibratedMarksSum /= correlationValuesSum;
+        productCorrelations.push(productCorrelation)
     }
 
-    /**
-     * @TODO 
-     * 1) из productCorrelations фильтрануть по id все продукты, у которых у targetUser оценка !== 0 (зачем показывать, то что он уже оценил)
-     * 2) оставшиеся продукты в productCorrelations отсортировать по productCorrelations.correlation
-     * 3) вернуть recomendationsCount продуктов из productCorrelations
-     */
+    fs.writeFileSync('./debug/productCorrelations.json', JSON.stringify({productCorrelations}));
 
-
-
-
+    const productsToRecommend = productCorrelations
+                                                .filter((prod) => targetUser.marks[prod.productId] === 0)
+                                                .sort((prod1, prod2) => prod2.calibratedMarksSum - prod1.calibratedMarksSum)
+                                                .slice(0, RECOMENDATIONS_COUNT);
+    
+    fs.writeFileSync('./debug/productsToRecommend.json', JSON.stringify({productsToRecommend, targetUser}));
+    return {productsToRecommend, mostCorrelatedUsers};
 }
 
-const usersWithCorrelation = calculateUserCorrelation(targetUser, usersMatrix);
-const mostCorrelatedUsers = selectClosestUsers(3, usersWithCorrelation);
+const {productsToRecommend, mostCorrelatedUsers} = calculateRecomendations(targetUser, usersMatrix);
 
-console.log(mostCorrelatedUsers);
+console.log('Most correlated users')
+for (let user of mostCorrelatedUsers) {
+    console.log(`User name: ${user.name}, correlation coef: ${user.correlation}`);
+}
+console.log('\n ------------------------------------------ \n');
+
+console.log('Recomended products');
+for (let product of productsToRecommend) {
+    console.log(`Name: ${leaves[product.productId].name}, correlation coef: ${product.calibratedMarksSum}`);
+}
