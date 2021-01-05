@@ -13,8 +13,8 @@ function User(name) {
 function createUserMatrix() {
     const usersMatrix = [];
 
-    // всего будет 20 пользователей;
-    for (let i = 1; i < 21; i++) {
+    // количество пользователей равно количество листьев в дереве;
+    for (let i = 1; i < leavesCount + 1; i++) {
         const user = new User(`user${i}`);
 
         // рандомим пользователю массив оценок для каждого листа из дерева
@@ -29,4 +29,4 @@ function createUserMatrix() {
 
 const matrix = createUserMatrix();
 
-fs.writeFileSync('./userMatrix.json', JSON.stringify(matrix));
+fs.writeFileSync('./usersMatrix.json', JSON.stringify(matrix));
