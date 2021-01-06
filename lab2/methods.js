@@ -9,8 +9,11 @@ const tree = require('../lab1/audioTree.json')
 
 const {nodes} = tree;
 
-const node1 = nodes[70];
-const node2 = nodes[92];
+// const node1 = nodes[70];
+// const node2 = nodes[92];
+
+const node1 = nodes[167];
+const node2 = nodes[74];
 
 // console.log(node1, node2);
 
@@ -119,13 +122,17 @@ function correlation(node1, node2) {
 
     return numerator / denominator;
 }
+if (require.main === module) {
+    console.log('Лист дерева 1:', node1, '\n');
+    console.log('Лист дерева 2:', node2,)
+    console.log('-----------------------------------')
 
-console.log('Лист дерева 1:', node1, '\n');
-console.log('Лист дерева 2:', node2,)
-console.log('-----------------------------------')
+    console.log('Евклидово растояние: ',euclideanDistance(node1, node2));
+    console.log('Манхетанское растояние: ',manhattanDistance(node1, node2));
+    console.log('Расстояние по дереву: ',treeDistance(nodes, node1, node2));
+    console.log('Корреляция: ',correlation(node1, node2));
+}
 
-
-console.log('Евклидово растояние: ',euclideanDistance(node1, node2));
-console.log('Манхетанское растояние: ',manhattanDistance(node1, node2));
-console.log('Расстояние по дереву: ',treeDistance(nodes, node1, node2));
-console.log('Корреляция: ',correlation(node1, node2));
+module.exports = {
+    correlation
+};
