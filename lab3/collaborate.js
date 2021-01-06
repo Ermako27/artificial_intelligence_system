@@ -1,3 +1,9 @@
+/**
+ * https://habr.com/ru/post/150399/
+ * https://vas3k.ru/blog/355/1
+ * https://habr.com/ru/company/surfingbird/blog/139518/
+ */
+
 const fs = require('fs');
 const {usersMatrix} = require('./data/usersMatrix.json');
 const tree = require('../lab1/audioTree.json');
@@ -13,7 +19,7 @@ const leavesCount = leaves.length;
 const MOST_CORRELATED_USERS_COUNT = 10;
 
 // количество рекомендаций
-const RECOMENDATIONS_COUNT = 10;
+const RECOMMENDATIONS_COUNT = 10;
 
 /**
  * http://statistica.ru/theory/koeffitsient-korrelyatsii/
@@ -112,7 +118,7 @@ function calculateRecomendations(targetUser, usersMatrix) {
     const productsToRecommend = productCorrelations
                                                 .filter((prod) => targetUser.marks[prod.productId] === 0)
                                                 .sort((prod1, prod2) => prod2.calibratedMarksSum - prod1.calibratedMarksSum)
-                                                .slice(0, RECOMENDATIONS_COUNT);
+                                                .slice(0, RECOMMENDATIONS_COUNT);
     
     fs.writeFileSync('./debug/productsToRecommend.json', JSON.stringify({productsToRecommend, targetUser}));
     return {productsToRecommend, mostCorrelatedUsers};
