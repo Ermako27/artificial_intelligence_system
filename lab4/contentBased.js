@@ -12,7 +12,6 @@ const RECOMMENDATIONS_COUNT = 10;
 function extractIds(targetUser) {
     const {marks} = targetUser;
 
-    console
     const marksCount = marks.length;
 
     // id продуктов, которых пользователь оценил на 5
@@ -89,13 +88,23 @@ const {mostRatedProdIds, notRatedProdIds} = extractIds(targetUser);
 const recommendations1 = recommendationsByOne(mostRatedProdIds[0], notRatedProdIds, tree.leaves);
 const recommendations2 = recommendationsByGroup(mostRatedProdIds, notRatedProdIds, tree.leaves);
 
-console.log('Рекомендации по 1 элементу');
+
+console.log('1 элемент, уже оцененный пользователем');
+console.log(`Product id: ${mostRatedProdIds[0]} | Product name: ${tree.leaves[mostRatedProdIds[0]].name} | User mark ${targetUser.marks[mostRatedProdIds[0]]}`);
+
+console.log(`\n\nСформированные рекомендации по одному, уже оцененному, элементу:`);
 for (let {product, correlation} of recommendations1) {
-    console.log(`Product id: ${product.id} | Product name: ${product.name} | Correlation koef ${correlation}`);
+    console.log(`Product id: ${product.id} | Product name: ${product.name} | Correlation сoef ${correlation.toFixed(5)}`);
 }
+
 console.log('\n ------------------------------------------ \n');
 
-console.log(`Рекомендации по группе из ${mostRatedProdIds.length} элементов`);
+console.log(`${mostRatedProdIds.length} элементов, уже оцененных пользователем:`)
+for (let id of mostRatedProdIds) {
+    console.log(`Product id: ${id} | Product name: ${tree.leaves[id].name} | User mark ${targetUser.marks[id]}`);
+}
+
+console.log(`\n\nСформированные рекомендации по массиву из ${mostRatedProdIds.length} элементов, уже оцененных пользователем:`);
 for (let {product, avgCorrelation} of recommendations2) {
-    console.log(`Product id: ${product.id} | Product name: ${product.name} | Correlation koef ${avgCorrelation}`);
+    console.log(`Product id: ${product.id} | Product name: ${product.name} | Correlation сoef ${avgCorrelation.toFixed(5)}`);
 }

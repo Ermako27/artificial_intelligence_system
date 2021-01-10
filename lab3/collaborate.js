@@ -128,11 +128,11 @@ const {productsToRecommend, mostCorrelatedUsers} = calculateRecomendations(targe
 
 console.log('Most correlated users')
 for (let user of mostCorrelatedUsers) {
-    console.log(`User name: ${user.name}, correlation coef: ${user.correlation}`);
+    console.log(`User name: ${user.name}, correlation coef: ${user.correlation.toFixed(5)}`);
 }
 console.log('\n ------------------------------------------ \n');
 
 console.log('Recomended products');
 for (let product of productsToRecommend) {
-    console.log(`Name: ${leaves[product.productId].name}, correlation coef: ${product.calibratedMarksSum}`);
+    console.log(`Product id: ${product.productId} Name: ${leaves[product.productId].name}, correlation coef: ${product.calibratedMarksSum.toFixed(5)}`);
 }
