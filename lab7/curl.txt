@@ -1,6 +1,6 @@
 get_all_params:
 curl -H "Content-Type: application/json" \
-  -d '{"query":"Расскажи о Re:sound I invisible 20 U mini"}' \
+  -d '{"query":"Расскажи что-нибудь о Re:sound I invisible 20 U mini"}' \
   http://localhost:5000
 
 get_certian_param:
@@ -21,4 +21,15 @@ curl -H "Content-Type: application/json" \
 thank_you:
 curl -H "Content-Type: application/json" \
   -d '{"query":"Спасибо"}' \
+  http://localhost:5000
+
+
+cannot find model
+curl -H "Content-Type: application/json" \
+  -d '{"query":"Расскажи что-нибудь о BlaBlaBla"}' \
+  http://localhost:5000
+
+do not understand you
+curl -H "Content-Type: application/json" \
+  -d '{"query":"У меня есть акустика Opticon, какой к ним усилитель больше подойдет"}' \
   http://localhost:5000

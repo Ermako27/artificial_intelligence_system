@@ -7,12 +7,17 @@ const {client, path} = createDialogClient()
 async function handleRequest(req, res) {
     const { query } = req.body;
 
-    // разбираем ввод пользователя
-    const intention = await detectIntent(query, client, path);
+    try {
+        // разбираем ввод пользователя
+        const intention = await detectIntent(query, client, path);
 
-    const response = processQuery(intention[0]);
+        const response = processQuery(intention[0]);
 
-    res.status(200).json(response);
+        res.status(200).json(response);
+    } catch (error) {
+        console.log(error);
+        res.status(200).json('Что-то пошло не так, скорее всего я что-то не понял');
+    }
     
 }
 

@@ -64,7 +64,11 @@ function processQuery(intention) {
                 } 
             } = intention;
         response = buildRecommendationsResponse(modelName);
-    } else if (userIntent === 'Default Welcome Intent' || userIntent === 'thank_you') {
+    } else if (
+        userIntent === 'Default Welcome Intent' ||
+        userIntent === 'thank_you' ||
+        userIntent === 'Default Fallback Intent') {
+
         const { queryResult: { fulfillmentText } } = intention;
         response = fulfillmentText
     }
@@ -77,14 +81,20 @@ function getModelByName(name) {
 }
 
 function buildAllParamsResponse(modelName) {
-    const { params } = getModelByName(modelName);
+    const model = getModelByName(modelName);
+
+    if (!model) {
+        return 'Кажется я не смог найти такую модель акустики'
+    }
+
+    const { params } = model;
 
     let response = `Все параметры модели: ${modelName}: \n`;
     for (let param in params) {
         if (param === 'wireless') {
-            response += `${paramsMap[param]}: ${params[param] ? 'да' : 'нет'} \n`;
+            response += `${paramsMap[param]}: ${params[param] ? 'да' : 'нет'} `;
         } else {
-            response += `${paramsMap[param]}: ${params[param]} \n`;
+            response += `${paramsMap[param]}: ${params[param]} `;
         }
     }
 
@@ -97,7 +107,13 @@ function buildAllParamsResponse(modelName) {
  * @param {*} param рукописный параметр, который ввел пользователь, напирмер "акустическое оформление"
  */
 function buildCertainParamResponse(modelName, param) {
-    const { params } = getModelByName(modelName);
+    const model = getModelByName(modelName);
+
+    if (!model) {
+        return 'Кажется я не смог найти такую модель акустики'
+    }
+
+    const { params } = model;
 
     const paramKey = reverseParamMap[param];
 
@@ -108,6 +124,10 @@ function buildCertainParamResponse(modelName, param) {
 
 function buildRecommendationsResponse(modelName) {
     const model = getModelByName(modelName);
+
+    if (!model) {
+        return 'Кажется я не смог найти такую модель акустики'
+    }
 
     const correlatedModels= []
     for (let leaf of leaves) {
@@ -123,10 +143,10 @@ function buildRecommendationsResponse(modelName) {
     .sort((model1, model2) => model2.correlation - model1.correlation)
     .slice(0,5);
 
-    let response = 'Вот наболее подходящие модели: \n'
+    let response = 'Вот наболее подходящие модели: '
 
     for (let i = 1; i < topFive.length + 1; i++) {
-        response += `${i}) ${topFive[i-1].correlatedModel.name} \n`; 
+        response += `${i}) ${topFive[i-1].correlatedModel.name} `; 
     }
 
     return response;
