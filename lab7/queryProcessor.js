@@ -64,7 +64,7 @@ function processQuery(intention) {
                 } 
             } = intention;
         response = buildRecommendationsResponse(modelName);
-    } else if (userIntent === 'Default Welcome Intent') {
+    } else if (userIntent === 'Default Welcome Intent' || userIntent === 'thank_you') {
         const { queryResult: { fulfillmentText } } = intention;
         response = fulfillmentText
     }

@@ -17,3 +17,8 @@ Wellcome:
 curl -H "Content-Type: application/json" \
   -d '{"query":"Привет"}' \
   http://localhost:5000
+
+thank_you:
+curl -H "Content-Type: application/json" \
+  -d '{"query":"Спасибо"}' \
+  http://localhost:5000
