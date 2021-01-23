@@ -1,38 +1,31 @@
-const dialogflow = require('@google-cloud/dialogflow');
-const credentials = require("./credentials.json");
-const uuid = require('uuid');
+const express = require('express');
+const {createDialogClient, detectIntent} = require('./dialog');
+const {processQuery} = require('./queryProcessor');
 
-const projectId = 'sii-audio-nxin';
-const lang = 'ru';
+const {client, path} = createDialogClient()
 
-function createDialogClient() {
-    const sessionId = uuid.v4();
-    const client = new dialogflow.SessionsClient({credentials});
-    const path = client.projectAgentSessionPath(projectId, sessionId);
+async function handleRequest(req, res) {
+    const { query } = req.body;
+
+    // разбираем ввод пользователя
+    const intention = await detectIntent(query, client, path);
+
+    // что хотел сделать пользователь и какая модель акустики
+    const {queryResult: {parameters: { fields: {model: {stringValue} } }, intent: {displayName}}} =  intention[0];
+
+    const response = processQuery(displayName, stringValue);
+
+    res.status(200).json(response);
     
-    return {client, path};
 }
 
-async function detecIntent(query, client, path) {
-    try {
-        const request = {
-            session: path,
-            queryInput: {
-                text: {
-                    text: query,
-                    languageCode: lang,
-                },
-            },
-        };
-    
-        const response = await client.detectIntent(request);
-    
-        return response;
-    } catch (error) {
-        console.log(error);
-        return {}
-    }
-}
+const app = express();
 
-const {client, path} = createDialogClient();
-detecIntent('привет', client, path).then((response) => {console.log(response)})
+app.use(express.json());
+
+app.post('/', handleRequest);
+
+const port = process.env.PORT || 5000;
+app.listen(port, () => {
+    console.log(`Server listening on port ${port}`);
+});

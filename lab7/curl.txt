@@ -1,0 +1,3 @@
+curl -H "Content-Type: application/json" \
+  -d '{"query":"Расскажи о Re:sound I invisible 20 U mini"}' \
+  http://localhost:5000
