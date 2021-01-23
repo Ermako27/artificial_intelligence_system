@@ -7,3 +7,8 @@ get_certian_param:
 curl -H "Content-Type: application/json" \
   -d '{"query":"Какую высоту указывают у Aria 926"}' \
   http://localhost:5000
+
+get_recommendations:
+curl -H "Content-Type: application/json" \
+  -d '{"query":"мне недавно понравились Opticon 5, есть что-то похожее?"}' \
+  http://localhost:5000
