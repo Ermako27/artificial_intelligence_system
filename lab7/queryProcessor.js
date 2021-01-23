@@ -64,6 +64,9 @@ function processQuery(intention) {
                 } 
             } = intention;
         response = buildRecommendationsResponse(modelName);
+    } else if (userIntent === 'Default Welcome Intent') {
+        const { queryResult: { fulfillmentText } } = intention;
+        response = fulfillmentText
     }
 
     return response

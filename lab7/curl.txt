@@ -12,3 +12,8 @@ get_recommendations:
 curl -H "Content-Type: application/json" \
   -d '{"query":"мне недавно понравились Opticon 5, есть что-то похожее?"}' \
   http://localhost:5000
+
+Wellcome:
+curl -H "Content-Type: application/json" \
+  -d '{"query":"Привет"}' \
+  http://localhost:5000
