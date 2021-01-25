@@ -1,0 +1,40 @@
+curl -H "Content-Type: application/json" \
+  -d '{"targetUserId":"0"}' \
+  http://localhost:5000/collaborate
+
+curl -H "Content-Type: application/json" \
+  -d '{"targetUserId":"0"}' \
+  http://localhost:5000/contentBased
+
+
+
+
+curl -H "Content-Type: application/json" \
+  -d '{"recommendationsCount":"5", "diapason": {
+    "max_power": [300, 500],
+    "max_frequency": [25000, 28000],
+    "min_frequency": [50, 100],
+    "body_height": [100, 200],
+    "wireless": 1,
+    "acoustic_design": "с фазинвентором"
+}}' \
+  http://localhost:5000/search
+
+
+
+
+
+
+
+
+
+
+
+  const diapason = {
+    'max_power': [300, 500],
+    'max_frequency': [25000, 28000],
+    'min_frequency': [50, 100],
+    'body_height': [100, 200],
+    'wireless': 1,
+    'acoustic_design': 'с фазинвентором'
+}
